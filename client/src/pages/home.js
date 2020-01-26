@@ -1,7 +1,6 @@
-import {react} from React;
-import {Component} from React;
+import React, { Component } from 'react';
 // components used 
-import {WelcomeBox} from './components/';
+import WelcomeBox from '../components/welcomeComponents'
 
 
 export class HomePage extends React.Component {
@@ -22,3 +21,5 @@ export class HomePage extends React.Component {
         )
     }
 }
+
+export default HomePage;
