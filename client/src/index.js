@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import HomePage from './pages/home';
 import Products from './classes/products'
-console.log(Products.getProducts());
 ReactDOM.render(<HomePage />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
