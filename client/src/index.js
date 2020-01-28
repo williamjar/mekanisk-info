@@ -3,10 +3,27 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import HomePage from './pages/home';
 import Products from './classes/products'
+import { ThemeProvider, Box } from '@material-ui/core';
+import { createMuiTheme } from '@material-ui/core/styles';
+import CssBaseline from "@material-ui/core/CssBaseline";
+
+
+
+const theme = createMuiTheme({
+    palette: {
+      type: 'dark',
+
+      primary: {
+        main: '#1d4f5e'
+      }
+    }
+  });
+
+
 
 ReactDOM.render(
 
-<HomePage />, 
+<ThemeProvider theme={theme}><CssBaseline/><HomePage /></ThemeProvider>, 
 
 
 document.getElementById('root'));

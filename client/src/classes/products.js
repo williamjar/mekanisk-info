@@ -38,7 +38,21 @@ export class Products {
             image: "https://i.imgur.com/sWiD32b.jpg"
         }
 
-        let products = [product_1,product_2,product_3,product_4, product_5];
+        const product_6 = {
+            name:'Tind',
+            price:100,
+            layout: 0.60,
+            image: "https://i.imgur.com/sWiD32b.jpg"
+        }
+
+        const product_7 = {
+            name:'Tind',
+            price:100,
+            layout: 0.60,
+            image: "https://i.imgur.com/sWiD32b.jpg"
+        }
+
+        let products = [product_1,product_2,product_3,product_4, product_5, product_6, product_7];
         return products;
     }
 

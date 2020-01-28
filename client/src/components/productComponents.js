@@ -1,25 +1,19 @@
 import React, { Component } from 'react';
-import {Card, Box,CardActionArea, CardMedia, Typography, Column, CardHeader, CardContent, CardActions,makeStyles,Grid } from '@material-ui/core';
+import {Card, Box, Paper,CardActionArea, CardMedia, Typography, Column, CardHeader, CardContent, CardActions,makeStyles,Grid } from '@material-ui/core';
 
 const useStyles = makeStyles({
     card: {
       minWidth: 275,
       maxWidth: 100,
-        margin: 10
-    },
-    bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
+        margin: 7,
+        marginTop: 15,
+        backgroundColor: "grey"
     },
     title: {
       fontSize: 14,
     },
-    pos: {
-      marginTop: 12,
-    },
     media: {
-        height: 140,
+        height: 200,
       },
   });
 
@@ -51,12 +45,13 @@ const ProductCard = (props) => {
 const ProductGrid = (props) => {
     let products = props.products;
     return(
-    
-        <Grid container direction="row" justify="center" alignItems="center">
+        <Paper square elevation={2}>
+        <Grid container direction="row" justify="center">
         {products.map((product)=>
             <ProductCard product={product}/>
         )}
         </Grid>
+        </Paper>
     )
 }
 
