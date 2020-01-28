@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
+import { Typography, Card, CardContent, Box, Grid } from '@material-ui/core';
 
 function WelcomeBox(){
-    return(
+    return( 
+
         <div>
-        <Button variant="contained">Dette er en test</Button>
+        
+                <Typography>Welcome to the website!</Typography>
+                <Button variant="contained">Dette er en test</Button>
         </div>
     )
 }
