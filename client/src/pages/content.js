@@ -7,7 +7,7 @@ import {Paper, makeStyles} from '@material-ui/core';
 import MenuBar from '../components/menuBar';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-export class HomePage extends React.Component {
+export class Content extends React.Component {
 
     constructor(props){
         
@@ -35,4 +35,4 @@ export class HomePage extends React.Component {
 
 }
 
-export default HomePage;
+export default Content;

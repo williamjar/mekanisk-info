@@ -7,7 +7,7 @@ const useStyles = makeStyles({
       maxWidth: 100,
         margin: 7,
         marginTop: 15,
-        backgroundColor: "grey"
+        backgroundColor: "#505050"
     },
     title: {
       fontSize: 14,
@@ -33,7 +33,11 @@ const ProductCard = (props) => {
             </Typography>
 
             <Typography className={classes.title}>
-            {product.price}, {product.layout};
+            Price: ${product.price} 
+            </Typography>
+
+            <Typography className={classes.title}>
+            Layout: {product.layout} %
             </Typography>
             </CardContent>
             </CardActionArea>
@@ -48,7 +52,7 @@ const ProductGrid = (props) => {
         <Paper square elevation={2}>
         <Grid container direction="row" justify="center">
         {products.map((product)=>
-            <ProductCard product={product}/>
+            <ProductCard key={product.name} product={product}/>
         )}
         </Grid>
         </Paper>

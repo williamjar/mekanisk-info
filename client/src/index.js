@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import HomePage from './pages/home';
+import Content from './pages/content';
 import Products from './classes/products'
 import { ThemeProvider, Box } from '@material-ui/core';
 import { createMuiTheme } from '@material-ui/core/styles';
@@ -15,6 +15,9 @@ const theme = createMuiTheme({
 
       primary: {
         main: '#1d4f5e'
+      },
+      secondary: {
+        main: '#505050'
       }
     }
   });
@@ -23,7 +26,7 @@ const theme = createMuiTheme({
 
 ReactDOM.render(
 
-<ThemeProvider theme={theme}><CssBaseline/><HomePage /></ThemeProvider>, 
+<ThemeProvider theme={theme}><CssBaseline/><Content /></ThemeProvider>, 
 
 
 document.getElementById('root'));
