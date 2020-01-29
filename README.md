@@ -1,5 +1,5 @@
 # Mekanisk Information Page
 
 
-test
+This is the Mekanisk project! 
 

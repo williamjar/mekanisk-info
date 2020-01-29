@@ -22,4 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-mekanisk-information-page\client\package-lock.json
+# package lock
+package-lock.json
