@@ -32,21 +32,21 @@ export class Products {
         }
 
         const product_5 = {
-            name:'Tind',
+            name:'Tind R1',
             price:100,
             layout: 60,
             image: "https://i.imgur.com/sWiD32b.jpg"
         }
 
         const product_6 = {
-            name:'Tind',
+            name:'Tind R2',
             price:100,
             layout: 60,
             image: "https://i.imgur.com/sWiD32b.jpg"
         }
 
         const product_7 = {
-            name:'Tind',
+            name:'Tind R4',
             price:100,
             layout: 60,
             image: "https://i.imgur.com/sWiD32b.jpg"
