@@ -1,9 +1,16 @@
 import React from 'react';
+import {Content } from './components/content';
+import { Menu } from './components/menu';
 
 
 function App() {
   return (
-   <div>mekanisk.xyz</div>
+    <div>
+    
+    <Menu/>
+    <Content/>
+
+    </div>
   );
 }
 
