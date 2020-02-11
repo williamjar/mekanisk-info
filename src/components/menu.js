@@ -7,7 +7,7 @@ export class Menu extends React.Component {
 
     render(){
         return(
-            <div>ahahha</div>
+            null
         )
     }
 

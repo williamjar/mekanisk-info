@@ -3,21 +3,22 @@ import { Card } from 'react-bootstrap';
 
 
 
-export const ProductPage = (props) => {
-
+export const ProductCard = (props) => {
 
     return(
-        <Card>
+        <Card style={{ width: '18rem' }} className="m-4 text-white" bg="dark">
             <Card.Header>
-                <Card.Img variant="top" src={props.image} />
-                <Card.Title>{props.title}</Card.Title>
+                <Card.Img variant="top" fluid src={props.product.image} />
+                <Card.Title>{props.product.name}</Card.Title>
             </Card.Header>
 
             <Card.Body>
-                
-                {props.bodyText}
-                
+                {props.product.description}
             </Card.Body>
+
+            <Card.Footer>
+            Size: {props.product.size} %
+            </Card.Footer>
             
         </Card>
 

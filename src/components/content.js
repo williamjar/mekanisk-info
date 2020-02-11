@@ -1,14 +1,24 @@
 import React from 'react';
-import { ProductPage } from '../subComponents/productPage';
-import { Container } from 'react-bootstrap';
+import { ProductCard } from '../subComponents/productPage';
+import { Container, CardDeck, CardGroup, CardColumns, Card,Row, Col  } from 'react-bootstrap';
+let products = require('../resources/products.json');
 
 export class Content extends React.Component {
     
     render(){
         return(
-            <Container className="m4">
-            <ProductPage title={"hashdahsdha"} bodyText={"ahsdhahsdhasd"} image={"https://images-na.ssl-images-amazon.com/images/I/81wRXdAOmkL._SL1500_.jpg"}/>
-            </Container>
+            
+                 <Row className="justify-content-center">
+                    {products.map(product =>
+                    
+                    <ProductCard product={product}/>
+                        
+                    )}
+                   </Row>
+
+                
+                
+            
         )
     }
 
