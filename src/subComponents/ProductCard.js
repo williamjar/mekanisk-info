@@ -81,7 +81,7 @@ export const BigCard = ({ removeComparison, product }) => {
                             <ListGroupItem variant="primary">Features</ListGroupItem>
 
                             {product.features.map(feature =>
-                                <ListGroupItem variant="dark">{feature}</ListGroupItem>
+                                <ListGroupItem key={feature} variant="dark">{feature}</ListGroupItem>
 
                             )}
 
