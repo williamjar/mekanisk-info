@@ -23,7 +23,7 @@ export const ProductCard = ({ product, setComparison, buttonColor }) => {
             <Card.Body><Card.Title>{product.name}</Card.Title></Card.Body>
 
             <Button variant="secondary" className="rounded-0" onClick={handleShow}>Read more</Button>
-            <Button disabled={buttonColor === "danger"} variant={buttonColor} className="rounded-0" onClick={setComparison}>Compare</Button>
+            <Button disabled={buttonColor === "secondary"} variant={buttonColor} className="rounded-0" onClick={setComparison}>Compare</Button>
 
         </Card>
 
