@@ -1,28 +1,29 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Button, Image, Table, Row, Col, ListGroup, Modal, ListGroupItem } from 'react-bootstrap';
+import { Card, Button, Image, Row, Col, ListGroup, Modal, ListGroupItem } from 'react-bootstrap';
 
 
 
-export const ProductCard = ({ product, setComparison,buttonColor }) => {
+export const ProductCard = ({ product, setComparison, buttonColor }) => {
 
     const [onOpen, setOnOpen] = useState(false);
     const handleClose = () => setOnOpen(false);
     const handleShow = () => setOnOpen(true);
-    
+
 
     return (
 
-        <Card style={{ width: '20rem' }} className="m-4 text-white border-0 shadow" bg="dark">
+        <Card style={{ width: '20rem' }} className="m-4 text-white border-0 shadow-lg" bg="dark">
 
             <ProductView onClose={handleClose} product={product} show={onOpen} />
+            <Card.Img variant="top" fluid="true" src={product.image} />
 
-            <Card.Header>
-                <Card.Img variant="top" fluid="true" src={product.image} />
-                <Card.Title>{product.name}</Card.Title>
-            </Card.Header>
+
+
+
+            <Card.Body><Card.Title>{product.name}</Card.Title></Card.Body>
 
             <Button variant="secondary" className="rounded-0" onClick={handleShow}>Read more</Button>
-            <Button disabled={buttonColor==="danger"}variant={buttonColor} className="rounded-0" onClick={setComparison}>Compare</Button>
+            <Button disabled={buttonColor === "danger"} variant={buttonColor} className="rounded-0" onClick={setComparison}>Compare</Button>
 
         </Card>
 
@@ -41,9 +42,9 @@ export const ProductView = ({ onClose, product, show }) => {
             onHide={onClose}
             animation={true}
         >
-
+            <Image fluid="true" src={product.image} />
             <Modal.Body className="text-white p-4">
-                <Image fluid="true" width="500" height="500" src={product.image} />
+
                 {product.description}
             </Modal.Body>
             <Button variant="danger" onClick={onClose}>Close</Button>
@@ -57,13 +58,14 @@ export const BigCard = ({ removeComparison, product }) => {
 
     return (
         <Card className="m-4 text-white border-0 shadow" bg="dark">
-            <Card.Header><Card.Title>{product.name}</Card.Title></Card.Header>
+            <Card.Img variant="top" fluid="true" src={product.image} />
+            
+               
+
             <Card.Body>
-
-
-                <Row className="justify-content-center"><Image fluid="true" width="200" src={product.image} /></Row>
-
-                <Row className="justify-content-center">
+            <Card.Title>{product.name}</Card.Title>
+            
+                <Row>
                     <Col>
                         <ListGroup>
                             <ListGroupItem variant="primary">Specifications</ListGroupItem>
@@ -74,7 +76,6 @@ export const BigCard = ({ removeComparison, product }) => {
                             <ListGroupItem variant="dark">Weight: {product.weight}g</ListGroupItem>
                         </ListGroup>
                     </Col>
-
                     <Col>
                         <ListGroup>
                             <ListGroupItem variant="primary">Features</ListGroupItem>
@@ -101,7 +102,7 @@ export const BigCard = ({ removeComparison, product }) => {
 export const BigCardPlaceholder = () => {
 
     return (
-        <Card className="m-4 text-white border-0 shadow" bg="superdark">
+        <Card className="m-4 text-white border-0 shadow-lg" bg="superdark">
             <Card.Header><Card.Title>Product comparison</Card.Title></Card.Header>
             <Card.Body>
 

@@ -50,10 +50,7 @@ export const ProductComparison = () => {
                         </Row>
 
 
-                        <CardDeck className="justify-content-center">
-
-
-
+                        <CardDeck className="m-4 justify-content-center">
 
                                 {comparison.map(cProduct =>
                                         <BigCard key={cProduct.name} product={cProduct} removeComparison={() => handleRemove(cProduct)} />
@@ -63,8 +60,6 @@ export const ProductComparison = () => {
                                 {comparison.length === 1 ? (<BigCardPlaceholder />) : (null)}
 
                         </CardDeck>
-
-
 
 
                 </div>
