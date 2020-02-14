@@ -1,17 +1,18 @@
 import React from 'react';
 import { ProductComparison } from './components/ProductComparison';
 import { Menu } from './components/menu';
-import { Container } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
+import Footer from './components/Footer';
 
 
 function App() {
   return (
     <div>
 
-
-      <Container fluid>
+      <Menu/>
       <ProductComparison />
-      </Container>
+      <Footer/>
+      
     </div>
   );
 }

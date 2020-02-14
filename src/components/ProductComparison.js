@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ProductCard, BigCard, BigCardPlaceholder } from '../subComponents/ProductCard';
-import { Container, CardDeck, Modal, CardGroup, CardColumns, Image, Card, Row, Col } from 'react-bootstrap';
+import { Container, CardDeck, Modal, CardGroup, CardColumns, Image, Card, Row, Col, Button } from 'react-bootstrap';
 let productsImport = require('../resources/products.json');
 
 
@@ -36,9 +36,8 @@ export const ProductComparison = () => {
         }
 
         return (
-                <div>
+                <Container fluid>
                         <Row className="justify-content-center">
-
                                 {productArray.map(product =>
                                         <ProductCard key={product.name} buttonColor={checkColor(product)} setComparison={() => handleAddition(product)} product={product} />
                                 )}
@@ -61,8 +60,7 @@ export const ProductComparison = () => {
 
                         </CardDeck>
 
-
-                </div>
+                </Container>
         )
 }
 
