@@ -3,12 +3,12 @@ import { Card, Button, Image, Table, Row, Col, ListGroup, Modal, ListGroupItem }
 
 
 
-export const ProductCard = ({ product, setComparison,disabled }) => {
+export const ProductCard = ({ product, setComparison,disabled, buttonColor }) => {
 
     const [onOpen, setOnOpen] = useState(false);
     const handleClose = () => setOnOpen(false);
     const handleShow = () => setOnOpen(true);
-    
+
     const [buttonDisabled, setButtonDisabled] = useState(false);
     
 
@@ -24,7 +24,7 @@ export const ProductCard = ({ product, setComparison,disabled }) => {
             </Card.Header>
 
             <Button variant="secondary" className="rounded-0" onClick={handleShow}>Read more</Button>
-            <Button disabled={disabled} variant={"primary"} className="rounded-0" onClick={setComparison}>Compare</Button>
+            <Button disabled={buttonColor==="danger"}variant={buttonColor} className="rounded-0" onClick={setComparison}>Compare</Button>
 
         </Card>
 
@@ -45,7 +45,7 @@ export const ProductView = ({ onClose, product, show }) => {
         >
 
             <Modal.Body className="text-white p-4">
-                <Image fluid="true" width="500" src={product.image} />
+                <Image fluid="true" width="500" height="500" src={product.image} />
                 {product.description}
             </Modal.Body>
             <Button variant="danger" onClick={onClose}>Close</Button>

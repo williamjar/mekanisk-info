@@ -14,7 +14,14 @@ export const ProductComparison = () => {
         const productArray = productsImport;
         const [comparison, setComparison] = useState([]);
 
+
         
+
+        const checkColor =(product) =>{
+                
+                if(comparison.indexOf(product) === -1) return "primary";
+                else return "danger";
+        }
 
 
         const handleRemove = (cProduct) => {
@@ -33,7 +40,7 @@ export const ProductComparison = () => {
                         <Row className="justify-content-center">
 
                                 {productArray.map(product =>
-                                        <ProductCard key={product.name} setComparison={() => handleAddition(product)} product={product} />
+                                        <ProductCard key={product.name} buttonColor={checkColor(product)} setComparison={() => handleAddition(product)} product={product} />
                                 )}
 
                         </Row>
