@@ -50,7 +50,7 @@ export const ProductComparison = () => {
                         </Row>
 
 
-                        <CardDeck className="m-4 justify-content-center">
+                        <CardDeck className="justify-content-center">
 
 
 

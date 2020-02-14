@@ -3,13 +3,11 @@ import { Card, Button, Image, Table, Row, Col, ListGroup, Modal, ListGroupItem }
 
 
 
-export const ProductCard = ({ product, setComparison,disabled, buttonColor }) => {
+export const ProductCard = ({ product, setComparison,buttonColor }) => {
 
     const [onOpen, setOnOpen] = useState(false);
     const handleClose = () => setOnOpen(false);
     const handleShow = () => setOnOpen(true);
-
-    const [buttonDisabled, setButtonDisabled] = useState(false);
     
 
     return (
