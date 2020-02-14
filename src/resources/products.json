@@ -25,7 +25,7 @@
         "description":"The simplistic elegant tray mount case with premium features.",
         "releaseDate":2017,
         "mountingStyle":"Tray mount",
-        "weight":2000,
+        "weight":1000,
         
         "features":
             [
@@ -45,7 +45,7 @@
         "description":"Bottom mount, solid and even typing experience.",
         "releaseDate":2019,
         "mountingStyle":"Bottom mount",
-        "weight":2000,
+        "weight":1400,
         "features":
             [
                "Polished steel weight",
@@ -62,7 +62,7 @@
         "description":"Top of the line, exclusive mechanical keyboard.",
         "releaseDate":2020,
         "mountingStyle":"Total isolation",
-        "weight":2000,
+        "weight":1800,
         "features":
             [
                "Our most high end mechanical keyboard",
