@@ -4,7 +4,9 @@
         "price": 290,
         "size":60,
         "image":"https://cdn.shopify.com/s/files/1/1347/2157/products/ultramarine_1800x1800.png?v=1561171077",
-        "description":"The famous Fjell mechanical keyboard."
+        "description":"The famous Fjell mechanical keyboard.",
+        "releaseDate":2017,
+        "mountingStyle":"Tray mount"
     },
 
     {
@@ -12,23 +14,29 @@
         "price": 120,
         "size":60,
         "image":"https://cdn.shopify.com/s/files/1/1347/2157/products/ultramarine_1800x1800.png?v=1561171077",
-        "description":"The simplistic elegant tray mount case with a lot of premium features."
+        "description":"The simplistic elegant tray mount case with a lot of premium features.",
+        "releaseDate":2017,
+        "mountingStyle":"Tray mount"
     },
 
     {
         "name":"Klippe S",
-        "price": 100,
+        "price": 310,
         "size":60,
         "image":"https://cdn.shopify.com/s/files/1/1347/2157/products/ultramarine_1800x1800.png?v=1561171077",
-        "description":"Bottom mount, solid and even typing experience. "
+        "description":"Bottom mount, solid and even typing experience. ",
+        "releaseDate":2019,
+        "mountingStyle":"Bottom mount"
     },
 
     {
         "name":"Tind",
-        "price": 100,
+        "price": 450,
         "size":60,
         "image":"https://cdn.shopify.com/s/files/1/1347/2157/products/ultramarine_1800x1800.png?v=1561171077",
-        "description":"Top of the line mechanical keyboard."
+        "description":"Top of the line mechanical keyboard.",
+        "releaseDate":2020,
+        "mountingStyle":"Total isolation"
     }
 
 

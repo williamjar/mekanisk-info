@@ -1,5 +1,5 @@
 import React from 'react';
-import {Content } from './components/content';
+import { ProductComparison } from './components/ProductComparison';
 import { Menu } from './components/menu';
 
 
@@ -8,7 +8,7 @@ function App() {
     <div>
     
     <Menu/>
-    <Content/>
+    <ProductComparison/>
 
     </div>
   );
