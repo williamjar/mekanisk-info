@@ -13,7 +13,7 @@ export const ProductCard = ({product, setComparison}) => {
 
     return(
         
-        <Card style={{ width: '20rem' }}  className="m-4 text-white border-0" bg="dark">
+        <Card style={{ width: '20rem' }}  className="m-4 text-white border-0 shadow" bg="dark">
 
             <ProductView onClose={handleClose} product={product} show={onOpen}/>
 
@@ -54,23 +54,42 @@ export const ProductView = ({onClose, product, show}) => {
 
 
 
-export const BigCard = ({removeComparison, product, show}) => {
+export const BigCard = ({removeComparison, product}) => {
 
     return(
-        <Card style={{ width: '25rem' }} className="m-4 text-white border-0" bg="dark">
+        <Card  className="m-4 text-white border-0 shadow" bg="dark">
             <Card.Header><Card.Title>{product.name}</Card.Title></Card.Header>
             <Card.Body>
 
-                {product.description}
+                
+                <Row className="justify-content-center"><Image fluid="true" width="200" src={product.image}/></Row>
 
+                <Row className="justify-content-center">
+                <Col>
                 <ListGroup>
-
+                <ListGroupItem variant="primary">Specifications</ListGroupItem>
+                <ListGroupItem variant="dark">Size: {product.size} %</ListGroupItem>
                 <ListGroupItem variant="dark">Mounting style: {product.mountingStyle}</ListGroupItem>
                 <ListGroupItem variant="dark">Release date: {product.releaseDate}</ListGroupItem>
-                <ListGroupItem variant="dark">Price: {product.price}</ListGroupItem>
-
+                <ListGroupItem variant="dark">Price: ${product.price}</ListGroupItem>
+                <ListGroupItem variant="dark">Weight: {product.weight}g</ListGroupItem>
                 </ListGroup>
+                </Col>
+
+                <Col>
+                <ListGroup>
+                <ListGroupItem variant="primary">Features</ListGroupItem>
                 
+                {product.features.map(feature =>
+                    <ListGroupItem variant="dark">{feature}</ListGroupItem>
+                    
+                    )}
+                
+                
+                </ListGroup>
+                </Col>
+                </Row>
+                <Row className="justify-content-center p-4">{product.description}</Row>
         
             </Card.Body>
             <Button variant="danger" onClick={removeComparison}>Close</Button>

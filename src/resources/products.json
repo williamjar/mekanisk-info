@@ -6,7 +6,14 @@
         "image":"https://cdn.shopify.com/s/files/1/1347/2157/products/ultramarine_1800x1800.png?v=1561171077",
         "description":"The famous Fjell mechanical keyboard.",
         "releaseDate":2017,
-        "mountingStyle":"Tray mount"
+        "mountingStyle":"Tray mount",
+        "weight":2000,
+        "features":
+            [
+               "Super Sturdy",
+               "Sharp, distinct design lines",
+               "Unique and serial numbered brass weight"
+            ]
     },
 
     {
@@ -16,7 +23,18 @@
         "image":"https://cdn.shopify.com/s/files/1/1347/2157/products/ultramarine_1800x1800.png?v=1561171077",
         "description":"The simplistic elegant tray mount case with a lot of premium features.",
         "releaseDate":2017,
-        "mountingStyle":"Tray mount"
+        "mountingStyle":"Tray mount",
+        "weight":2000,
+        
+        "features":
+            [
+               "Affordable",
+               "Removabla brass mounting points",
+               "Mekanisk mountain details"
+            ]
+        
+            
+        
     },
 
     {
@@ -26,7 +44,14 @@
         "image":"https://cdn.shopify.com/s/files/1/1347/2157/products/ultramarine_1800x1800.png?v=1561171077",
         "description":"Bottom mount, solid and even typing experience. ",
         "releaseDate":2019,
-        "mountingStyle":"Bottom mount"
+        "mountingStyle":"Bottom mount",
+        "weight":2000,
+        "features":
+            [
+               "Polished steel weight",
+               "Carbon fiber isolation layer",
+               "Optional add on foam"
+            ]
     },
 
     {
@@ -36,7 +61,14 @@
         "image":"https://cdn.shopify.com/s/files/1/1347/2157/products/ultramarine_1800x1800.png?v=1561171077",
         "description":"Top of the line mechanical keyboard.",
         "releaseDate":2020,
-        "mountingStyle":"Total isolation"
+        "mountingStyle":"Total isolation",
+        "weight":2000,
+        "features":
+            [
+               "Top of the line mechanical keyboard",
+               "Unique total isolation mounting",
+               "USB-C daughterboard"
+            ]
     }
 
 

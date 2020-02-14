@@ -14,14 +14,24 @@ export const ProductComparison = () => {
         const productArray = productsImport;
         const [comparison,setComparison] = useState([]);
 
-                       
+
+        const handleRemove = (cProduct) => {
+                let index = comparison.indexOf(cProduct);
+                setComparison(comparison.filter((_,i) => i!== index));
+        }
+
+        const handleAddition = (product) =>{
+                if(comparison.length<4){
+                        setComparison([...comparison, product]);
+                }
+        }
 
         return(
                 <div>
                  <Row className="justify-content-center">
 
                     {productArray.map(product =>
-                        <ProductCard key={product.name} setComparison={() => setComparison([...comparison, product])} product={product} />
+                        <ProductCard key={product.name} setComparison={() => handleAddition(product)} product={product} />
                     )}
 
                    </Row>
@@ -31,13 +41,13 @@ export const ProductComparison = () => {
                    </Row>
 
 
-                
-
-                <CardDeck className="m-4">
+                <CardDeck className="m-4 justify-content-center">
                 {comparison.map(cProduct =>
-                        <BigCard product={cProduct} removeComparison={"ujaua"}/>
+                        <BigCard key={cProduct.name} product={cProduct} removeComparison={() => handleRemove(cProduct)}/>
                         
-                        )}
+                )}
+
+                
                 </CardDeck>
 
 
