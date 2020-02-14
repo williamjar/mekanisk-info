@@ -14,6 +14,8 @@ export const ProductComparison = () => {
         const productArray = productsImport;
         const [comparison, setComparison] = useState([]);
 
+        
+
 
         const handleRemove = (cProduct) => {
                 let index = comparison.indexOf(cProduct);

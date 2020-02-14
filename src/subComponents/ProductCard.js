@@ -3,13 +3,14 @@ import { Card, Button, Image, Table, Row, Col, ListGroup, Modal, ListGroupItem }
 
 
 
-export const ProductCard = ({ product, setComparison }) => {
+export const ProductCard = ({ product, setComparison,disabled }) => {
 
     const [onOpen, setOnOpen] = useState(false);
     const handleClose = () => setOnOpen(false);
     const handleShow = () => setOnOpen(true);
-
-
+    
+    const [buttonDisabled, setButtonDisabled] = useState(false);
+    
 
     return (
 
@@ -23,7 +24,7 @@ export const ProductCard = ({ product, setComparison }) => {
             </Card.Header>
 
             <Button variant="secondary" className="rounded-0" onClick={handleShow}>Read more</Button>
-            <Button variant="primary" className="rounded-0" onClick={setComparison}>Compare</Button>
+            <Button disabled={disabled} variant={"primary"} className="rounded-0" onClick={setComparison}>Compare</Button>
 
         </Card>
 
