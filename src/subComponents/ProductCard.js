@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Button, Image, Row, Col, ListGroup, Modal, ListGroupItem } from 'react-bootstrap';
+import { useHistory } from "react-router-dom";
 
 
 
@@ -8,6 +9,7 @@ export const ProductCard = ({ product, setComparison, buttonColor }) => {
     const [onOpen, setOnOpen] = useState(false);
     const handleClose = () => setOnOpen(false);
     const handleShow = () => setOnOpen(true);
+    const history = useHistory();
 
 
     return (
@@ -22,7 +24,7 @@ export const ProductCard = ({ product, setComparison, buttonColor }) => {
 
             <Card.Body><Card.Title>{product.name}</Card.Title></Card.Body>
 
-            <Button variant="secondary" className="rounded-0" onClick={handleShow}>Read more</Button>
+            <Button variant="secondary" className="rounded-0" onClick={()=>history.push(`/product/${product.name}`)}>Read more</Button>
             <Button disabled={buttonColor === "secondary"} variant={buttonColor} className="rounded-0" onClick={setComparison}>Compare</Button>
 
         </Card>
@@ -59,12 +61,10 @@ export const BigCard = ({ removeComparison, product }) => {
     return (
         <Card className="m-4 text-white border-0 shadow" bg="dark">
             <Card.Img variant="top" fluid="true" src={product.image} />
-            
-               
 
             <Card.Body>
-            <Card.Title>{product.name}</Card.Title>
-            
+                <Card.Title>{product.name}</Card.Title>
+
                 <Row>
                     <Col>
                         <ListGroup>
@@ -114,5 +114,3 @@ export const BigCardPlaceholder = () => {
         </Card>
     )
 }
-
-// big cards on the bottom so you can easily compare

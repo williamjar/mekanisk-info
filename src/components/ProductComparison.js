@@ -5,17 +5,11 @@ let productsImport = require('../resources/products.json');
 
 
 
-
-
-
-
 export const ProductComparison = () => {
 
         const productArray = productsImport;
         const [comparison, setComparison] = useState([]);
 
-
-        
 
         const checkColor =(product) =>{
                 
