@@ -3,20 +3,12 @@ import { Card, Button, Image, Row, Col, ListGroup, Modal, ListGroupItem } from '
 
 
 
-export class Menu extends React.Component {
+export const Menu = () => {
 
+    return (
+        <div>
+            <Button onClick={() => window.open("https://mekanisk.co/")}>Go to store</Button>
 
-    render(){
-        return(
-            <div>
-                <Button onClick={() => window.open("https://mekanisk.co/")}>Go to store</Button>
-                
-            </div>
-            
-            
-        )
-    }
-
+        </div>
+    )
 }
-
-export default Menu;

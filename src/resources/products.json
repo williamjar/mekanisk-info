@@ -1,6 +1,7 @@
 [
     {
         "name":"Fjell",
+        "version":"R4",
         "price": 290,
         "size":60,
         "image":"https://cdn.shopify.com/s/files/1/1347/2157/files/u5t2ty5srgw31.png?v=1581680958",
@@ -18,7 +19,8 @@
     },
 
     {
-        "name":"Klippe",
+        "name":"Klippe T",
+        "version":"R3",
         "price": 120,
         "size":60,
         "image":"https://cdn.shopify.com/s/files/1/1347/2157/files/gU0hDndTJP2IPTCCK6de9LKBk7Cr49fqaTrVBCGuPD8.jpg?v=1581680868",
@@ -39,6 +41,7 @@
 
     {
         "name":"Klippe S",
+        "version":"R1",
         "price": 310,
         "size":60,
         "image":"https://cdn.shopify.com/s/files/1/1347/2157/files/esjyq7F_1.jpg?v=1581680849",
@@ -56,7 +59,7 @@
 
     {
         "name":"Tind",
-        "price": 450,
+        "version":"R1",
         "size":60,
         "image":"https://cdn.shopify.com/s/files/1/1347/2157/files/TIND_2020-Jan-19_07-11-45PM-000_CustomizedView26880036366_png_1200x630_557e064d-ee5e-4c35-83de-307a86903ec8.png?v=1581681772",
         "description":"Top of the line, exclusive mechanical keyboard.",
