@@ -19,9 +19,6 @@ function App() {
       <Route exact path="/schedule" component={()=><Schedule/>}/>
       <Route exact path="/product/:name" component={()=><ProductPage/>}/>
       <Footer/>
-
-      
-      
       </HashRouter>
    
   );
