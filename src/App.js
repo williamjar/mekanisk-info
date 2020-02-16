@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import {HashRouter, Route} from 'react-router-dom';
 import { ProductPage } from './components/ProductPage';
 import { Schedule } from './components/Schedule';
-import { Menu } from './components/Menu';
+import { Menu } from './components/menu';
 
 
 function App() {
