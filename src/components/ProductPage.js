@@ -8,13 +8,25 @@ let productsImport = require('../resources/products.json');
 export const ProductPage = () => {
 
     const param = useParams()
-    const product = productsImport.find(product => product.name===param.name);
+    const product = productsImport.find(product => product.SKU===param.SKU);
 
 
 
     return (
         <Container fluid>
-            <div className="text-white text-center"> Here comes the {product.name} detailed product page</div>
+            <Card className="text-white m-4" bg="dark">
+            
+            <Card.Header>
+            <Card.Title className="text-white text-center">{product.name}</Card.Title>
+            </Card.Header>
+
+            <Card.Body>
+            {product.description}
+            <Card.Img  src={product.images[0]}></Card.Img>
+            </Card.Body>
+           
+            
+            </Card>
         </Container>
         
     )

@@ -6,9 +6,13 @@ import {HashRouter, Route} from 'react-router-dom';
 import { ProductPage } from './components/ProductPage';
 import { Schedule } from './components/Schedule';
 import { Menu } from './components/menu';
+import {useSpring, animated} from 'react-spring';
 
 
 function App() {
+  const jumpIn = useSpring({
+    from: {transform:'translate3d(0,0,0)', opacity:0}, transform:'translate3d(0,0,0)',opacity:1
+})
   return (
     
       
@@ -16,8 +20,8 @@ function App() {
       <HashRouter>
       <Menu/>
       <Route exact path="/" component={()=><ProductComparison/>}/>
-      <Route exact path="/schedule" component={()=><Schedule/>}/>
-      <Route exact path="/product/:name" component={()=><ProductPage/>}/>
+      <Route exact path="/schedule" component={()=> <animated.div style={jumpIn}><Schedule/></animated.div>}/>
+      <Route exact path="/keyboard/:SKU" component={()=><ProductPage/>}/>
       <Footer/>
       </HashRouter>
    
