@@ -6,7 +6,10 @@
         "price": 290,
         "size":60,
         "images": [
-            "https://cdn.shopify.com/s/files/1/1347/2157/files/u5t2ty5srgw31.png?v=1581680958"
+            "https://cdn.shopify.com/s/files/1/1347/2157/files/u5t2ty5srgw31.png?v=1581680958",
+            "https://i.ytimg.com/vi/SAv7zlVqjXA/maxresdefault.jpg",
+            "https://external-preview.redd.it/QFo46F5GtWftZ38WuotF0CMZknCRZJN73F7MlT4Si4Y.jpg?auto=webp&s=5c07e023b60557fef4a533cee25c5ed15645ba85",
+            "https://i.ytimg.com/vi/aeqnEJpPZVY/maxresdefault.jpg"
             ],
         "description":"The famous Fjell mechanical keyboard.",
         "releaseDate":2017,
@@ -28,7 +31,12 @@
         "SKU":"klippe_t_r3",
         "price": 120,
         "size":60,
-        "images": ["https://cdn.shopify.com/s/files/1/1347/2157/files/gU0hDndTJP2IPTCCK6de9LKBk7Cr49fqaTrVBCGuPD8.jpg?v=1581680868"],
+        "images": [
+            "https://cdn.shopify.com/s/files/1/1347/2157/files/gU0hDndTJP2IPTCCK6de9LKBk7Cr49fqaTrVBCGuPD8.jpg?v=1581680868",
+            "https://cdn.shopify.com/s/files/1/1347/2157/products/Case-Mekanisk-Klippe-R3-Silver-Logo_1800x1800.jpg?v=1574692485",
+            "https://cdn.shopify.com/s/files/1/1347/2157/products/Case-Mekanisk-Klippe-R3-Aqua-Logo_1800x1800.jpg?v=1574692485"
+        
+        ],
         "description":"The simplistic elegant tray mount case with premium features.",
         "releaseDate":2017,
         "nextReleasedate":null,
@@ -70,6 +78,7 @@
         "name":"Tind",
         "version":"R1",
         "SKU":"tind_r1",
+        "price": 450,
         "size":60,
         "images":[
             "https://cdn.shopify.com/s/files/1/1347/2157/files/TIND_2020-Jan-19_07-11-45PM-000_CustomizedView26880036366_png_1200x630_557e064d-ee5e-4c35-83de-307a86903ec8.png?v=1581681772"
@@ -86,7 +95,31 @@
                "USB-C daughterboard",
                "Seamless design"
             ]
+    },
+    {
+        "name":"Type X",
+        "version":"R1",
+        "SKU":"type_x_r1",
+        "price": 165,
+        "size":60,
+        "images":[
+            "https://cdn.shopify.com/s/files/1/1347/2157/files/typex.jpg?v=1581969586"
+        ],
+        "description":"Unique, never done before keyboard",
+        "releaseDate":2019,
+        "nextReleasedate":null,
+        "mountingStyle":"Tray with silicone",
+        "weight":900,
+        "features":
+            [
+               "Unique new tray mount typing experience",
+               "New Mekanisk design, first in the X series",
+               "Soft typing experience",
+               "Sleek lines"
+            ]
     }
+
+    
 
 
 

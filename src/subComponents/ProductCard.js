@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Button, Image, Row, Col, ListGroup, Modal, ListGroupItem } from 'react-bootstrap';
 import { useHistory } from "react-router-dom";
-import {useSpring, animated} from 'react-spring';
+import { useSpring, animated } from 'react-spring';
 
 
 
@@ -12,26 +12,26 @@ export const ProductCard = ({ product, setComparison, buttonColor }) => {
     const history = useHistory();
 
     const jumpIn = useSpring({
-        from: {transform:'translate3d(0,-100px,0)', opacity:0}, transform:'translate3d(0,0,0)',opacity:1
+        from: { transform: 'translate3d(0,-100px,0)', opacity: 0 }, transform: 'translate3d(0,0,0)', opacity: 1
     })
 
     return (
         <animated.div style={jumpIn}>
-        <Card style={{ width: '20rem' }} className="m-4 text-white border-0 shadow-lg" bg="dark">
+            <Card style={{ width: '20rem' }} className="m-4 text-white border-0 shadow-lg" bg="dark">
 
-            <ProductView onClose={handleClose} product={product} show={onOpen} />
-            <Card.Img variant="top" fluid="true" src={product.images[0]} />
+                <ProductView onClose={handleClose} product={product} show={onOpen} />
+                <Card.Img variant="top" fluid="true" src={product.images[0]} />
 
-            <Card.Body>
-            <Card.Title>{product.name}</Card.Title>
-            
-            <Card.Text className="text-muted">{product.version}</Card.Text>
-            </Card.Body>
+                <Card.Body>
+                    <Card.Title>{product.name}</Card.Title>
 
-            <Button variant="secondary" className="rounded-0" onClick={()=>history.push(`/keyboard/${product.SKU}`)}>Read more</Button>
-            <Button disabled={buttonColor === "secondary"} variant={buttonColor} className="rounded-0" onClick={setComparison}>Compare</Button>
+                    <Card.Text className="text-muted">{product.version}</Card.Text>
+                </Card.Body>
 
-        </Card>
+                <Button variant="secondary" className="rounded-0" onClick={() => history.push(`/keyboard/${product.SKU}`)}>Read more</Button>
+                <Button disabled={buttonColor === "secondary"} variant={buttonColor} className="rounded-0" onClick={setComparison}>Compare</Button>
+
+            </Card>
         </animated.div>
 
     )
@@ -41,7 +41,7 @@ export const ProductCard = ({ product, setComparison, buttonColor }) => {
 
 
 export const ProductView = ({ onClose, product, show }) => {
-    
+
     return (
         <Modal
             className="border-0 shadow"
@@ -63,53 +63,45 @@ export const ProductView = ({ onClose, product, show }) => {
 
 export const BigCard = ({ removeComparison, product }) => {
     const jumpIn = useSpring({
-        from: {transform:'translate3d(0,-100px,0)', opacity:0}, transform:'translate3d(0,0,0)',opacity:1
+        from: { transform: 'translate3d(0,-100px,0)', opacity: 0 }, transform: 'translate3d(0,0,0)', opacity: 1
     })
     return (
         <animated.div style={jumpIn}>
-        <Card className="m-2 text-white border-0 shadow" bg="dark">
-        <Button variant="danger" onClick={removeComparison}>Close</Button>
-            <Card.Img variant="top" fluid="true" src={product.images[0]} />
-            
-            <Card.Body>
-                
-            <Card.Title>{product.name}</Card.Title>
-            <Card.Text className="text-muted">{product.version}</Card.Text> 
-            <Card.Text>{product.description}</Card.Text> 
+            <Card className="m-2 text-white border-0 shadow" bg="dark">
+                <Button variant="danger" onClick={removeComparison}>Close</Button>
+                <Card.Img variant="top" fluid="true" src={product.images[0]} />
 
-                <Row>
-                
-                    <Col>
-                    <Card className="m-0 shadow border-0">
-                        <ListGroup>
-                            <ListGroupItem active>Specifications</ListGroupItem>
-                            <ListGroupItem variant="dark">Size: {product.size} %</ListGroupItem>
-                            <ListGroupItem variant="dark">Mounting style: {product.mountingStyle}</ListGroupItem>
-                            <ListGroupItem variant="dark">Release date: {product.releaseDate}</ListGroupItem>
-                            <ListGroupItem variant="dark">Price: ${product.price}</ListGroupItem>
-                            <ListGroupItem variant="dark">Weight: {product.weight}g</ListGroupItem>
-                        </ListGroup>
-                    </Card>
+                <Card.Body>
 
-                    </Col>
-                    <Col>
-                        
-                        <Card className="m-0 shadow border-0">
-                            <ListGroup >
-                            <ListGroupItem active>Features</ListGroupItem>
-                            {product.features.map(feature =>
-                                <ListGroupItem variant="dark" key={feature} >{feature}</ListGroupItem>
-                            )}
-                            </ListGroup>
-                        </Card>
+                    <Card.Title>{product.name}</Card.Title>
+                    <Card.Text className="text-muted">{product.version}</Card.Text>
 
-                    </Col>
-                </Row>
-                
-                             
-            </Card.Body>
-            
-        </Card>
+
+                    <ListGroup>
+                        <ListGroupItem active>Specifications</ListGroupItem>
+                        <ListGroupItem variant="dark">Size: {product.size} %</ListGroupItem>
+                        <ListGroupItem variant="dark">Mounting style: {product.mountingStyle}</ListGroupItem>
+                        <ListGroupItem variant="dark">Release date: {product.releaseDate}</ListGroupItem>
+                        <ListGroupItem variant="dark">Price: ${product.price}</ListGroupItem>
+                        <ListGroupItem variant="dark">Weight: {product.weight}g</ListGroupItem>
+                    </ListGroup>
+
+
+                    <ListGroup >
+                        <ListGroupItem active>Features</ListGroupItem>
+                        {product.features.map(feature =>
+                            <ListGroupItem variant="dark" key={feature} >{feature}</ListGroupItem>
+                        )}
+                    </ListGroup>
+
+
+
+
+
+
+                </Card.Body>
+
+            </Card>
         </animated.div>
     )
 }
@@ -117,15 +109,15 @@ export const BigCard = ({ removeComparison, product }) => {
 
 
 export const BigCardPlaceholder = () => {
-    
+
     return (
-        
+
         <Card className="m-4 text-white border-0 shadow-lg" bg="superdark">
             <Card.Header><Card.Title>Product comparison</Card.Title></Card.Header>
             <Card.Body>
                 <Card.Text className="text-center">You can click "compare" to place the product you want to compare here.</Card.Text>
             </Card.Body>
         </Card>
-        
+
     )
 }

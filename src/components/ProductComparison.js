@@ -36,9 +36,10 @@ export const ProductComparison = () => {
                 }
         }
 
+        
+
         return (
                 <Container fluid>
-                        
                         <Row className="justify-content-center">
                                 {productArray.map(product =>
                                         <animated.div style={jumpIn}>
@@ -48,7 +49,7 @@ export const ProductComparison = () => {
                         </Row>
                         
 
-                        <Row className="justify-content-center">
+                        <Row className="justify-content-center  ">
                                 <Image className="m-4" src="https://cdn.shopify.com/s/files/1/1347/2157/files/mekanisk-white_9415c58d-cb9d-48d7-885e-b5e1fec1df40_320x.png?v=1560371000" alt="Responsive image" />
                                 
                         </Row>
@@ -59,7 +60,7 @@ export const ProductComparison = () => {
                         
                        
 
-                        <CardDeck>
+                        <CardDeck className="mt-4" >
                                 
                        
                                 {comparison.map(cProduct =>
