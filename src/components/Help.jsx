@@ -44,10 +44,6 @@ export const Help = () => {
                         </Col>
                     
                 </Row>
-                
-            
-
-
 
                 </Card.Body>
 
