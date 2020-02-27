@@ -9,12 +9,11 @@ let productsImport = require('../resources/products.json');
 export const Help = () => {
 
     return (
-        <Container fluid>
-            <Card className="text-white p-4 m-4" bg="dark">
+        <Container >
+            <Card className="text-white p-4" bg="dark">
 
                 <Card.Body>
                 This means that the product is around 60% ready for release:
-
                 <Row className="mb-4">
                         <Col>
                         <ProgressBar variant="info" now={60}/>

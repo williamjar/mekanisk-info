@@ -31,8 +31,6 @@ export const ProductComparison = () => {
                 }
         }
 
-        
-
         return (
                 <Container fluid>
                        
