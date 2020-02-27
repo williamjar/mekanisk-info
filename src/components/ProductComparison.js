@@ -12,18 +12,13 @@ export const ProductComparison = () => {
                 from: {transform:'translate3d(0,-50px,0)', opacity:0}, transform:'translate3d(0,0,0)',opacity:1
             })
 
-        
-
         const productArray = productsImport;
         const [comparison, setComparison] = useState([]);
-
-
         const checkColor =(product) =>{
 
                 if(comparison.indexOf(product) === -1) return "primary";
                 else return "secondary";
         }
-
 
         const handleRemove = (cProduct) => {
                 let index = comparison.indexOf(cProduct);
@@ -40,10 +35,11 @@ export const ProductComparison = () => {
 
         return (
                 <Container fluid>
+                       
                         <Row className="justify-content-center">
                                 {productArray.map(product =>
                                         <animated.div style={jumpIn}>
-                                        <ProductCard key={product.name} buttonColor={checkColor(product)} setComparison={() => handleAddition(product)} product={product} />
+                                        <ProductCard comparable={true} key={product.name} buttonColor={checkColor(product)} setComparison={() => handleAddition(product)} product={product} />
                                         </animated.div>
                                )}
                         </Row>

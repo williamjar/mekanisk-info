@@ -1,10 +1,36 @@
 [
     {
         "name":"Fjell",
+        "version":"R5",
+        "SKU":"fjell_r4",
+        "price": "???",
+        "size":60,
+        "releaseProgress":45,
+        "images": [
+            "https://cdn.shopify.com/s/files/1/1347/2157/files/t2XtOu-KhQxJu7bF3yCFnLFvVLVnMuW984aSxJz_zaw.jpg?v=1582818571"
+            ],
+        "description":"The famous Fjell mechanical keyboard.",
+        "releaseDate":2020,
+        "nextReleasedate":2020, 
+        "mountingStyle":"Tray mount",
+        "weight":2000,
+        "features":
+            [   
+               "Great sound profile",
+               "Sharp, distinct design lines",
+               "Uniquely machined and serial numbered brass weight",
+               "Sturdy tray mounting"
+            ]
+    },
+    
+    
+    {
+        "name":"Fjell",
         "version":"R4",
         "SKU":"fjell_r4",
         "price": 290,
         "size":60,
+        "releaseProgress":100,
         "images": [
             "https://cdn.shopify.com/s/files/1/1347/2157/files/u5t2ty5srgw31.png?v=1581680958",
             "https://i.ytimg.com/vi/SAv7zlVqjXA/maxresdefault.jpg",
@@ -12,7 +38,7 @@
             "https://i.ytimg.com/vi/aeqnEJpPZVY/maxresdefault.jpg"
             ],
         "description":"The famous Fjell mechanical keyboard.",
-        "releaseDate":2017,
+        "releaseDate":2019,
         "nextReleasedate":null, 
         "mountingStyle":"Tray mount",
         "weight":2000,
@@ -31,6 +57,7 @@
         "SKU":"klippe_t_r3",
         "price": 120,
         "size":60,
+        "releaseProgress":100,
         "images": [
             "https://cdn.shopify.com/s/files/1/1347/2157/files/gU0hDndTJP2IPTCCK6de9LKBk7Cr49fqaTrVBCGuPD8.jpg?v=1581680868",
             "https://cdn.shopify.com/s/files/1/1347/2157/products/Case-Mekanisk-Klippe-R3-Silver-Logo_1800x1800.jpg?v=1574692485",
@@ -51,13 +78,13 @@
                "Sturdy tray mounting, based on the Fjell"
             ]
     },
-
     {
         "name":"Klippe S",
         "version":"R1",
         "SKU":"klippe_s_r1",
         "price": 310,
         "size":60,
+        "releaseProgress":100,
         "images":[
             "https://cdn.shopify.com/s/files/1/1347/2157/files/esjyq7F_1.jpg?v=1581680849"
         ],
@@ -73,19 +100,19 @@
                "Optional add on foam"
             ]
     },
-
     {
         "name":"Tind",
         "version":"R1",
         "SKU":"tind_r1",
         "price": 450,
         "size":60,
+        "releaseProgress":60,
         "images":[
             "https://cdn.shopify.com/s/files/1/1347/2157/files/TIND_2020-Jan-19_07-11-45PM-000_CustomizedView26880036366_png_1200x630_557e064d-ee5e-4c35-83de-307a86903ec8.png?v=1581681772"
         ],
         "description":"Top of the line, exclusive mechanical keyboard.",
         "releaseDate":2020,
-        "nextReleasedate":null,
+        "nextReleasedate":2020,
         "mountingStyle":"Total isolation",
         "weight":1800,
         "features":
@@ -102,6 +129,7 @@
         "SKU":"type_x_r1",
         "price": 165,
         "size":60,
+        "releaseProgress":100,
         "images":[
             "https://cdn.shopify.com/s/files/1/1347/2157/files/typex.jpg?v=1581969586"
         ],
@@ -113,7 +141,7 @@
         "features":
             [
                "Unique new tray mount typing experience",
-               "New Mekanisk design, first in the X series",
+               "New Mekanisk design, first in the X-series",
                "Soft typing experience",
                "Sleek lines"
             ]

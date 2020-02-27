@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Button, Image, Row, Col, ListGroup, Modal, ListGroupItem } from 'react-bootstrap';
+import { Card, Button, ProgressBar, Image, Row, Col, ListGroup, Modal, ListGroupItem } from 'react-bootstrap';
 import { useHistory } from "react-router-dom";
 import { useSpring, animated } from 'react-spring';
 
 
 
-export const ProductCard = ({ product, setComparison, buttonColor }) => {
+export const ProductCard = ({ product, setComparison, buttonColor, comparable }) => {
 
     const [onOpen, setOnOpen] = useState(false);
     const handleClose = () => setOnOpen(false);
@@ -17,19 +17,25 @@ export const ProductCard = ({ product, setComparison, buttonColor }) => {
 
     return (
         <animated.div style={jumpIn}>
+            
             <Card style={{ width: '20rem' }} className="m-4 text-white border-0 shadow-lg" bg="dark">
-
+                
                 <ProductView onClose={handleClose} product={product} show={onOpen} />
                 <Card.Img variant="top" fluid="true" src={product.images[0]} />
 
+
+
+                
+                <ProgressBar variant="info" now={product.releaseProgress}/>
                 <Card.Body>
-                    <Card.Title>{product.name}</Card.Title>
+                
+                <Card.Title>{product.name}</Card.Title>
 
                     <Card.Text className="text-muted">{product.version}</Card.Text>
                 </Card.Body>
 
                 <Button variant="secondary" className="rounded-0" onClick={() => history.push(`/keyboard/${product.SKU}`)}>Read more</Button>
-                <Button disabled={buttonColor === "secondary"} variant={buttonColor} className="rounded-0" onClick={setComparison}>Compare</Button>
+                <Button disabled={buttonColor === "secondary"} hidden={!comparable} variant={buttonColor} className="rounded-0" onClick={setComparison}>Compare</Button>
 
             </Card>
         </animated.div>
@@ -37,8 +43,6 @@ export const ProductCard = ({ product, setComparison, buttonColor }) => {
     )
 
 }
-
-
 
 export const ProductView = ({ onClose, product, show }) => {
 
