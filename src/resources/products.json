@@ -5,7 +5,7 @@
         "SKU":"fjell_r5",
         "price": "???",
         "size":60,
-        "releaseProgress":45,
+        "releaseProgress":80,
         "images": [
             "https://cdn.shopify.com/s/files/1/1347/2157/files/t2XtOu-KhQxJu7bF3yCFnLFvVLVnMuW984aSxJz_zaw.jpg?v=1582818571"
             ],
@@ -22,7 +22,6 @@
                "Sturdy tray mounting"
             ]
     },
-    
     
     {
         "name":"Fjell",
@@ -106,8 +105,9 @@
         "SKU":"tind_r1",
         "price": 450,
         "size":60,
-        "releaseProgress":60,
+        "releaseProgress":70,
         "images":[
+            "https://cdn.shopify.com/s/files/1/1347/2157/files/tind_angled.png?v=1583674151",
             "https://cdn.shopify.com/s/files/1/1347/2157/files/TIND_2020-Jan-19_07-11-45PM-000_CustomizedView26880036366_png_1200x630_557e064d-ee5e-4c35-83de-307a86903ec8.png?v=1581681772"
         ],
         "description":"Top of the line, exclusive mechanical keyboard.",
@@ -131,6 +131,9 @@
         "size":60,
         "releaseProgress":100,
         "images":[
+            "https://cdn.shopify.com/s/files/1/1347/2157/files/Type_X_2020-Mar-07_01-47-38PM-000_CustomizedView9773837184_png.png?v=1583674162",
+            "https://cdn.shopify.com/s/files/1/1347/2157/files/Type_X_2020-Mar-07_01-48-01PM-000_CustomizedView9773837184_png.png?v=1583674162",
+            "https://cdn.shopify.com/s/files/1/1347/2157/files/Type_X_2020-Mar-07_01-47-08PM-000_CustomizedView9773837184_png.png?v=1583674162",
             "https://cdn.shopify.com/s/files/1/1347/2157/files/typex.jpg?v=1581969586"
         ],
         "description":"Unique, never done before keyboard",
