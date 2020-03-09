@@ -44,6 +44,12 @@ export const Help = () => {
                     
                 </Row>
 
+                <br/>
+                Round is indicated by the letter R and a number. This is the round, or revision of the product. The newest revision is always the one that will be sold.
+
+                <br/>
+                Sorting for the main page will be implemented.
+
                 </Card.Body>
 
                     

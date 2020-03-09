@@ -78,7 +78,7 @@ export const BigCard = ({ removeComparison, product }) => {
                 <Card.Body>
 
                     <Card.Title>{product.name}</Card.Title>
-                    <Card.Text className="text-muted">{product.version}</Card.Text>
+                    <Card.Title>{product.version}</Card.Title>
 
 
                     <ListGroup>

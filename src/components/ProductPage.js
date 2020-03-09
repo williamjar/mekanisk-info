@@ -17,7 +17,7 @@ export const ProductPage = () => {
         <Container >
             <Card className="text-white p-4" bg="dark">
                 <Card.Body>
-                    <Card.Title className="text-white text-center">{product.name}, {product.version}</Card.Title>
+                    <Card.Title className="text-white text-center">{product.name} {product.version}</Card.Title>
                     <Card.Text>{product.description}</Card.Text>
 
                     <Row>

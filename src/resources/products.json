@@ -5,7 +5,7 @@
         "SKU":"fjell_r5",
         "price": "???",
         "size":60,
-        "releaseProgress":80,
+        "releaseProgress":75,
         "images": [
             "https://cdn.shopify.com/s/files/1/1347/2157/files/t2XtOu-KhQxJu7bF3yCFnLFvVLVnMuW984aSxJz_zaw.jpg?v=1582818571"
             ],
@@ -15,14 +15,13 @@
         "mountingStyle":"Tray mount",
         "weight":2000,
         "features":
-            [   "All new colors",
+            [  "New colors",
                "Great sound profile",
                "Sharp, distinct design lines",
                "Uniquely machined and serial numbered brass weight",
                "Sturdy tray mounting"
             ]
     },
-    
     {
         "name":"Fjell",
         "version":"R4",
@@ -64,7 +63,7 @@
         
         ],
         "description":"The simplistic elegant tray mount case with premium features.",
-        "releaseDate":2017,
+        "releaseDate":2019,
         "nextReleasedate":null,
         "mountingStyle":"Tray mount",
         "weight":1000,
@@ -75,6 +74,36 @@
                "Removeable brass mounting points",
                "Mekanisk mountain detailing",
                "Sturdy tray mounting, based on the Fjell"
+            ]
+    },
+    {
+        "name":"Klippe T",
+        "version":"R4",
+        "SKU":"klippe_t_r4",
+        "price": 120,
+        "size":60,
+        "releaseProgress":80,
+        "images": [
+            "https://cdn.shopify.com/s/files/1/1347/2157/files/Annotation_2020-03-09_040912.png?v=1583723377",
+            "https://cdn.shopify.com/s/files/1/1347/2157/files/gU0hDndTJP2IPTCCK6de9LKBk7Cr49fqaTrVBCGuPD8.jpg?v=1581680868",
+            "https://cdn.shopify.com/s/files/1/1347/2157/products/Case-Mekanisk-Klippe-R3-Silver-Logo_1800x1800.jpg?v=1574692485"
+            
+        ],
+        "description":"The simplistic elegant tray mount case with premium features.",
+        "releaseDate":2020,
+        "nextReleasedate":2020,
+        "mountingStyle":"Tray mount",
+        "weight":1000,
+        
+        "features":
+            [
+               "New custom bumpons",
+               "Lower typing height than R3",
+               "Same affordable price point",
+               "Removeable brass mounting points",
+               "Mekanisk mountain detailing",
+               "Sturdy tray mounting, based on the Fjell",
+               "Optional add on foam"
             ]
     },
     {
@@ -110,7 +139,7 @@
             "https://cdn.shopify.com/s/files/1/1347/2157/files/tind_angled.png?v=1583674151",
             "https://cdn.shopify.com/s/files/1/1347/2157/files/TIND_2020-Jan-19_07-11-45PM-000_CustomizedView26880036366_png_1200x630_557e064d-ee5e-4c35-83de-307a86903ec8.png?v=1581681772"
         ],
-        "description":"Top of the line, exclusive mechanical keyboard.",
+        "description":"Top of the line, exclusive mechanical keyboard. Designed from years of experience, from the ground up.",
         "releaseDate":2020,
         "nextReleasedate":2020,
         "mountingStyle":"Total isolation",
@@ -120,7 +149,9 @@
                "Our most high end mechanical keyboard",
                "Unique total isolation mounting",
                "USB-C daughterboard",
-               "Seamless design"
+               "Seamless design",
+               "Accented color",
+               "Wilba PCB"
             ]
     },
     {
@@ -136,7 +167,7 @@
             "https://cdn.shopify.com/s/files/1/1347/2157/files/Type_X_2020-Mar-07_01-47-08PM-000_CustomizedView9773837184_png.png?v=1583674162",
             "https://cdn.shopify.com/s/files/1/1347/2157/files/typex.jpg?v=1581969586"
         ],
-        "description":"Unique, never done before keyboard",
+        "description":"Unique keyboard. Never done before. Flexible, even tray mount",
         "releaseDate":2019,
         "nextReleasedate":null,
         "mountingStyle":"Tray with silicone",
