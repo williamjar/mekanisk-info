@@ -5,7 +5,7 @@
         "SKU":"fjell_r5",
         "price": "???",
         "size":60,
-        "releaseProgress":75,
+        "releaseProgress":100,
         "images": [
             "https://cdn.shopify.com/s/files/1/1347/2157/files/t2XtOu-KhQxJu7bF3yCFnLFvVLVnMuW984aSxJz_zaw.jpg?v=1582818571"
             ],
@@ -82,7 +82,7 @@
         "SKU":"klippe_t_r4",
         "price": 120,
         "size":60,
-        "releaseProgress":80,
+        "releaseProgress":100,
         "images": [
             "https://cdn.shopify.com/s/files/1/1347/2157/files/Annotation_2020-03-09_040912.png?v=1583723377",
             "https://cdn.shopify.com/s/files/1/1347/2157/files/gU0hDndTJP2IPTCCK6de9LKBk7Cr49fqaTrVBCGuPD8.jpg?v=1581680868",

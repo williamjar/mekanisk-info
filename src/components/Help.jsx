@@ -23,7 +23,7 @@ export const Help = () => {
                     
                 </Row>
 
-                This means that the product has been released:
+                This means that the product has finished design:
                 <Row className="mb-4">
                         <Col>
                         <ProgressBar variant="info" now={100}/>
