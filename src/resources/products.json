@@ -98,12 +98,12 @@
         "features":
             [
                "New custom bumpons",
-               "Lower typing height than R3",
-               "Same affordable price point",
+               "Same affordable price point as before",
                "Removeable brass mounting points",
                "Mekanisk mountain detailing",
                "Sturdy tray mounting, based on the Fjell",
-               "Optional add on foam"
+               "Optional add on foam",
+               "Available in Polycarbonate(PC)"
             ]
     },
     {
@@ -180,9 +180,5 @@
                "Sleek lines"
             ]
     }
-
-    
-
-
 
 ]
