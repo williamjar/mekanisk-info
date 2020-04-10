@@ -135,7 +135,7 @@
         "size":60,
         "releaseProgress":70,
         "images":[
-            "https://cdn.shopify.com/s/files/1/1347/2157/files/tind_angled.png?v=1583674151",
+        
             "https://cdn.shopify.com/s/files/1/1347/2157/files/TIND_2020-Jan-19_07-11-45PM-000_CustomizedView26880036366_png_1200x630_557e064d-ee5e-4c35-83de-307a86903ec8.png?v=1581681772"
         ],
         "description":"Top of the line, exclusive mechanical keyboard. Designed from years of experience, from the ground up.",
@@ -146,10 +146,9 @@
         "features":
             [
                "Our most high end mechanical keyboard",
-               "Unique total isolation mounting",
+               "Mekanisk gasket mounting",
                "USB-C daughterboard",
                "Seamless design",
-               "Accented color",
                "Wilba PCB"
             ]
     },
