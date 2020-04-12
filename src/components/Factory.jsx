@@ -10,10 +10,11 @@ export const Factory = () => {
 
     return (
         <Container>
-
+            <Card.Text className="text-white">Last updated: 04/12/2020</Card.Text>
+            
+            
             {factoryImport.map(product=>
-                
-                <Card className="text-white m-4 p-4" bg="dark">
+                <Card className="text-white mt-4 p-4" bg="dark">
 
                 <Card.Title>{product.name} </Card.Title>
                 <Card.Text className="text-muted">{product.version}</Card.Text>
