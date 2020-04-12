@@ -8,10 +8,8 @@ export const Menu = () => {
     return (
         <div className="mb-4">
             <Button onClick={() => history.push("/")}>Home</Button>
-            <Button onClick={() => history.push("/schedule")}>Schedule</Button>
-            <Button onClick={() => history.push("/help")}>Help</Button>
-            <Button onClick={() => window.open("https://mekanisk.co/")}>Go to store</Button>
-            
+            <Button onClick={() => history.push("/productcomparison")}>Products</Button>
+            <Button onClick={() => window.open("https://mekanisk.com/")}>Go to store</Button>
         </div>
     )
 }

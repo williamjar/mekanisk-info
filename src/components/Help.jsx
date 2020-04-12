@@ -34,16 +34,6 @@ export const Help = () => {
                 </Row>
 
 
-                This means that the product is currently live in the store:
-                <Row className="b-4">
-                        <Col>
-                        <ProgressBar variant="liveGreen" now={100}/>
-                        </Col> 
-                        <Col>
-                        </Col>
-                    
-                </Row>
-
                 <br/>
                 Round is indicated by the letter R and a number. This is the round, or revision of the product. The newest revision is always the one that will be sold.
 

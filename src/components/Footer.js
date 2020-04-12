@@ -11,8 +11,7 @@ export class Footer extends React.Component {
             <div className="text-muted text-center">                
                 Thank you for using Mekanisk.xyz.
 
-                This web app is in very early stages of production.
-                Want to hire me? william@mekanisk.co
+                This web app is in early stages of production.
 
                 <Nav className="justify-content-center" >
                     <Nav.Item>

@@ -1,0 +1,35 @@
+[
+    
+    {
+        "name":"Klippe S",
+        "version":"R1",
+        "SKU":"klippes_r1",
+        "estShippingDate":"April 2020",
+        "stage": 3
+    },
+
+    {
+        "name":"Type X",
+        "version":"R1",
+        "SKU":"typex_r1",
+        "estShippingDate":"April 2020",
+        "stage": 3
+    },
+    
+    
+    {
+        "name":"Fjell",
+        "version":"R5",
+        "SKU":"fjell_r5",
+        "estShippingDate":"August 2020",
+        "stage": 0
+    },
+
+    {
+        "name":"Klippe T",
+        "version":"R4",
+        "SKU":"klippet_r4",
+        "estShippingDate":"August 2020",
+        "stage": 0
+    }
+]

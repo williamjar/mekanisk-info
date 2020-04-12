@@ -4,10 +4,10 @@ import { Container, Button } from 'react-bootstrap';
 import Footer from './components/Footer';
 import {HashRouter, Route} from 'react-router-dom';
 import { ProductPage } from './components/ProductPage';
-import { Schedule } from './components/Schedule';
 import { Menu } from './components/menu';
 import {useSpring, animated} from 'react-spring';
 import { Help } from './components/Help';
+import { Factory } from './components/Factory';
 
 
 function App() {
@@ -18,10 +18,9 @@ function App() {
       
       <HashRouter>
       <Menu/>
-      <Route exact path="/" component={()=><ProductComparison/>}/>
-      <Route exact path="/schedule" component={()=> <animated.div style={jumpIn}><Schedule/></animated.div>}/>
-      <Route exact path="/help" component={()=> <animated.div style={jumpIn}><Help/></animated.div>}/>
-      <Route exact path="/keyboard/:SKU" component={()=><ProductPage/>}/>
+        <Route exact path="/" component={()=><animated.div style={jumpIn}><Factory/></animated.div>}/>
+        <Route exact path="/productcomparison" component={()=> <animated.div style={jumpIn}><ProductComparison/></animated.div>}/>
+        <Route exact path="/keyboard/:SKU" component={()=><ProductPage/>}/>
       <Footer/>
       </HashRouter>
    
