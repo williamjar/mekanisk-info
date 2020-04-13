@@ -19,10 +19,34 @@ export const Factory = () => {
                 <Card.Title>{product.name} </Card.Title>
                 <Card.Text className="text-muted">{product.version}</Card.Text>
                 
-                <Card.Text>{getStageOp(product.stage)}</Card.Text>
+                
+                <Row>
+                    <Col>
+                    <ProgressBar animated={product.stage===0} now={getStageProgress(product.stage, 0)}/> 
+                    <Card.Text className="text-center">Pre order</Card.Text>
+                    </Col>
+                    <Col>
+                   
+                    <ProgressBar animated={product.stage===1} now={getStageProgress(product.stage, 1)}/>
+                    <Card.Text className="text-center">Arranging manufacturing</Card.Text>
+                    </Col>
 
-                <ProgressBar animated  now={getStageProgress(product.stage)}/>
+                    <Col>
+                    <ProgressBar animated={product.stage===2} now={getStageProgress(product.stage, 2)}/>
+                    <Card.Text className="text-center">In production</Card.Text>
+                    </Col>
 
+                    <Col>
+                    <ProgressBar animated={product.stage===3} now={getStageProgress(product.stage, 3)}/>
+                    <Card.Text className="text-center">Quality control</Card.Text>
+                    </Col>
+
+                    <Col>
+                    <ProgressBar animated={product.stage===4} now={getStageProgress(product.stage, 4)}/>
+                    <Card.Text className="text-center">Shipping to customers</Card.Text>
+                    </Col>
+                </Row>
+                <br/>
                 <Card.Text>Estimated shipping: {product.estShippingDate}</Card.Text>
 
                 </Card>
@@ -31,49 +55,14 @@ export const Factory = () => {
         </Container>
     )
 
-    function getStageOp(stage){
-        if(stage===0){
-            return "Waiting to place order with Mekanisk Manufacturing"
-        }
-
-        if(stage===1){
-            return "Order placed with Mekanisk Manufacturing"
-        }
-
-        if(stage===2){
-            return "In production"
-        }
-
-        if(stage===3){
-            return "In quality control and packaging"
-        }
-
-        if(stage===4){
-            return "Shipping has started"
-        }
-    }
-
-    function getStageProgress(stage){
-        if(stage===0){
-            return 5
-        }
-
-        if(stage===1){
-            return 25
-        }
-
-        if(stage===2){
-            return 50
-        }
-
-        if(stage===3){
-            return 75
-        }
-
-        if(stage===4){
+    function getStageProgress(stage, progressBarNumber){
+        if(stage<progressBarNumber){
+            return 0
+        } else{
             return 100
         }
     }
+    
 
 }
 
