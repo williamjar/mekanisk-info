@@ -119,7 +119,7 @@
         "releaseDate":2019,
         "nextReleasedate":null,
         "mountingStyle":"Bottom mount",
-        "weight":1400,
+        "weight":1300,
         "features":
             [
                "Polished steel weight",
@@ -138,18 +138,19 @@
         
             "https://cdn.shopify.com/s/files/1/1347/2157/files/TIND_2020-Jan-19_07-11-45PM-000_CustomizedView26880036366_png_1200x630_557e064d-ee5e-4c35-83de-307a86903ec8.png?v=1581681772"
         ],
-        "description":"Top of the line, exclusive mechanical keyboard. Designed from years of experience, from the ground up.",
+        "description":"Top of the line, exclusive 60%-sized mechanical keyboard. Designed from years of experience, from the ground up.",
         "releaseDate":2020,
         "nextReleasedate":2020,
-        "mountingStyle":"Total isolation",
-        "weight":1800,
+        "mountingStyle":"Mekanisk isolation mounting",
+        "weight":1000,
         "features":
             [
-               "Our most high end mechanical keyboard",
-               "Mekanisk gasket mounting",
-               "USB-C daughterboard",
+               "All new Mekanisk isolation mounting",
+               "USB-C centered daughterboard",
                "Seamless design",
-               "Wilba PCB"
+               "All new solder-only Wilba PCB",
+               "New plate design and cutouts"
+               
             ]
     },
     {
@@ -165,7 +166,7 @@
             "https://cdn.shopify.com/s/files/1/1347/2157/files/Type_X_2020-Mar-07_01-47-08PM-000_CustomizedView9773837184_png.png?v=1583674162",
             "https://cdn.shopify.com/s/files/1/1347/2157/files/typex.jpg?v=1581969586"
         ],
-        "description":"Unique keyboard. Never done before. Flexible, even tray mount",
+        "description":"Unique keyboard. Never done before. Flexible tray mount",
         "releaseDate":2019,
         "nextReleasedate":null,
         "mountingStyle":"Tray with silicone",
