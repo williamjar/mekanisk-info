@@ -31,5 +31,15 @@
         "SKU":"klippet_r4",
         "estShippingDate":"August 2020",
         "stage": 1
+    },
+
+    {
+        "name":"Tind",
+        "version":"R1",
+        "SKU":"tind_r1",
+        "estShippingDate":"-",
+        "stage": -1
     }
+
+
 ]

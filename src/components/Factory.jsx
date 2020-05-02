@@ -5,6 +5,7 @@ import { Container, CardDeck, Modal, CardGroup, CardColumns, ListGroup, ListGrou
 import { CardText } from 'react-bootstrap/Card';
 let productsImport = require('../resources/products.json');
 let factoryImport = require('../resources/factory.json');
+let messageImport = require('../resources/message.json');
 
 export const Factory = () => {
 
@@ -15,16 +16,29 @@ export const Factory = () => {
                                 <Image className="m-4" src="https://cdn.shopify.com/s/files/1/1347/2157/files/mekanisk-white_9415c58d-cb9d-48d7-885e-b5e1fec1df40_320x.png?v=1560371000" alt="Responsive image" />
                                 
                         </Row>
-            <Card.Text className="text-white">Last updated: 04/29/2020</Card.Text>
+            <Card.Text className="text-white">Last updated: 05/02/2020</Card.Text>
             
+
+            
+
+            {messageImport.map(message =>
+            <Card className="text-white mt-4 p-4" bg="dark">
+            
+            <Card.Text className="text-white">{message.date}</Card.Text>
+            <Card.Text className="text-white">{message.message}</Card.Text>
+            
+
+            </Card>
+
+            )}
+
+
+           
             
             {factoryImport.map(product=>
                 <Card className="text-white mt-4 p-4" bg="dark">
-
                 <Card.Title>{product.name} </Card.Title>
                 <Card.Text className="text-muted">{product.version}</Card.Text>
-                
-                
                 <Row>
                     <Col>
                     <ProgressBar animated={product.stage===0} now={getStageProgress(product.stage, 0)}/> 
@@ -53,9 +67,7 @@ export const Factory = () => {
                 </Row>
                 <br/>
                 <Card.Text>Estimated shipping: {product.estShippingDate}</Card.Text>
-
                 </Card>
-        
             )}
         </Container>
     )
