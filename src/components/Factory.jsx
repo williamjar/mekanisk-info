@@ -16,7 +16,7 @@ export const Factory = () => {
                                 <Image className="m-4" src="https://cdn.shopify.com/s/files/1/1347/2157/files/mekanisk-white_9415c58d-cb9d-48d7-885e-b5e1fec1df40_320x.png?v=1560371000" alt="Responsive image" />
                                 
                         </Row>
-            <Card.Text className="text-white">Last updated: 05/02/2020</Card.Text>
+            <Card.Text className="text-white">Last updated: 05/06/2020</Card.Text>
             
 
             
