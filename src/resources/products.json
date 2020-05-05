@@ -3,7 +3,7 @@
         "name":"Fjell",
         "version":"R5",
         "SKU":"fjell_r5",
-        "price": "???",
+        "price": 290,
         "size":60,
         "releaseProgress":100,
         "images": [
@@ -13,13 +13,15 @@
         "releaseDate":2020,
         "nextReleasedate":2020, 
         "mountingStyle":"Tray mount",
-        "weight":2000,
+        "weight":1900,
         "features":
-            [  "New colors",
+            [  "New colors, new logo",
+                "Slightly lower starting height",
                "Great sound profile",
                "Sharp, distinct design lines",
                "Uniquely machined and serial numbered brass weight",
-               "Sturdy tray mounting"
+               "Sturdy tray mounting",
+               "Removeable brass mounting points"
             ]
     },
     {
@@ -45,7 +47,8 @@
                "Great sound profile",
                "Sharp, distinct design lines",
                "Uniquely machined and serial numbered brass weight",
-               "Sturdy tray mounting"
+               "Sturdy tray mounting",
+               "Removeable brass mounting points"
             ]
     },
 
@@ -98,6 +101,7 @@
         "features":
             [
                "Same affordable price point as before",
+               "Slightly lower starting height (under 20mm)",
                "Removeable brass mounting points",
                "Mekanisk mountain detailing",
                "Sturdy tray mounting, based on the Fjell",
