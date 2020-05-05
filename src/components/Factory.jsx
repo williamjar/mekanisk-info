@@ -64,6 +64,7 @@ export const Factory = () => {
                     <ProgressBar animated={product.stage===4} now={getStageProgress(product.stage, 4)}/>
                     <Card.Text className="text-center">Shipping to customers</Card.Text>
                     </Col>
+
                 </Row>
                 <br/>
                 <Card.Text>Estimated shipping: {product.estShippingDate}</Card.Text>
