@@ -13,10 +13,10 @@ export const Factory = () => {
         <Container>
 
 <Row className="justify-content-center  ">
-                                <Image className="m-4" src="https://cdn.shopify.com/s/files/1/1347/2157/files/mekanisk-white_9415c58d-cb9d-48d7-885e-b5e1fec1df40_320x.png?v=1560371000" alt="Responsive image" />
+                                <Image className="m-4" width="500" src="https://cdn.shopify.com/s/files/1/1347/2157/files/websitelogo.png?v=1588832402" alt="Responsive image" />
                                 
                         </Row>
-            <Card.Text className="text-white">Last updated: 05/08/2020</Card.Text>
+            <Card.Text className="text-white">Last updated: 05/09/2020</Card.Text>
             
 
             
@@ -31,9 +31,6 @@ export const Factory = () => {
             </Card>
 
             )}
-
-
-           
             
             {factoryImport.map(product=>
                 <Card className="text-white mt-4 p-4" bg="dark">
