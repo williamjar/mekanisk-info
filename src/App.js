@@ -8,6 +8,7 @@ import { Menu } from './components/menu';
 import {useSpring, animated} from 'react-spring';
 import { Help } from './components/Help';
 import { Factory } from './components/Factory';
+import {Downloads} from './components/Downloads'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Menu/>
         <Route exact path="/" component={()=><animated.div style={jumpIn}><Factory/></animated.div>}/>
         <Route exact path="/productcomparison" component={()=> <animated.div style={jumpIn}><ProductComparison/></animated.div>}/>
+        <Route exact path="/downloads" component={()=> <animated.div style={jumpIn}><Downloads/></animated.div>}/>
         <Route exact path="/keyboard/:SKU" component={()=><ProductPage/>}/>
       <Footer/>
       </HashRouter>
