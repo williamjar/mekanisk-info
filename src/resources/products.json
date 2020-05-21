@@ -137,10 +137,10 @@
         "SKU":"tind_r1",
         "price": 450,
         "size":60,
-        "releaseProgress":70,
+        "releaseProgress":90,
         "images":[
         
-            "https://cdn.shopify.com/s/files/1/1347/2157/files/TIND_2020-Jan-19_07-11-45PM-000_CustomizedView26880036366_png_1200x630_557e064d-ee5e-4c35-83de-307a86903ec8.png?v=1581681772"
+            "https://cdn.shopify.com/s/files/1/1347/2157/files/TIND_2020-May-10_02-34-36PM-000_CustomizedView41609815214.png?v=1589125986"
         ],
         "description":"Top of the line, exclusive 60%-sized mechanical keyboard. Designed from years of experience, from the ground up.",
         "releaseDate":2020,
@@ -154,7 +154,6 @@
                "Seamless design",
                "All new solder-only Wilba PCB",
                "New plate design and cutouts"
-               
             ]
     },
     {
