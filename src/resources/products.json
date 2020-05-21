@@ -135,7 +135,7 @@
         "name":"Tind",
         "version":"R1",
         "SKU":"tind_r1",
-        "price": 450,
+        "price": 400,
         "size":60,
         "releaseProgress":90,
         "images":[
@@ -146,7 +146,7 @@
         "releaseDate":2020,
         "nextReleasedate":2020,
         "mountingStyle":"Mekanisk isolation mounting",
-        "weight":1000,
+        "weight":1500,
         "features":
             [
                "All new Mekanisk isolation mounting",
