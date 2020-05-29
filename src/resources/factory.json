@@ -6,7 +6,7 @@
         "version":"R5",
         "SKU":"fjell_r5",
         "estShippingDate":"August 2020",
-        "stage": 1
+        "stage": 2
     },
 
     {
@@ -14,7 +14,7 @@
         "version":"R4",
         "SKU":"klippet_r4",
         "estShippingDate":"August 2020",
-        "stage": 1
+        "stage": 2
     },
 
     {
