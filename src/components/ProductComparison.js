@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ProductCard, BigCard, BigCardPlaceholder } from '../subComponents/ProductCard';
-import { Container, CardDeck, Modal, CardGroup, CardColumns, Image, Card, Row, Col, Button } from 'react-bootstrap';
+import { Container, CardDeck,Accordion, ListGroup, Modal, CardGroup, CardColumns, Image, Card, Row, Col, Button, ListGroupItem } from 'react-bootstrap';
 import {useSpring, animated} from 'react-spring';
 let productsImport = require('../resources/products.json');
 
@@ -31,16 +31,29 @@ export const ProductComparison = () => {
                 }
         }
 
+        
         return (
                 <Container fluid>
                        
-                        <Row className="justify-content-center">
+                       <Col>
+                       <Accordion defaultActiveKey="1">
+                                
+                                <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                                <Button>Show all products</Button>
+                                </Accordion.Toggle>
+                                <Accordion.Collapse eventKey="0">
+                                <ListGroup>
                                 {productArray.map(product =>
                                         <animated.div style={jumpIn}>
                                         <ProductCard comparable={true} key={product.name} buttonColor={checkColor(product)} setComparison={() => handleAddition(product)} product={product} />
                                         </animated.div>
                                )}
-                        </Row>
+                               </ListGroup>
+                               
+                               </Accordion.Collapse>
+                               
+                               </Accordion>
+                        </Col>
                         
 
                         <Row className="justify-content-center  ">
