@@ -16,16 +16,14 @@ export const Factory = () => {
                                 <Image className="m-4" width="500" src="https://cdn.shopify.com/s/files/1/1347/2157/files/websitelogo.png?v=1588832402" alt="Responsive image" />
                                 
                         </Row>
-            <Card.Text className="text-white">Last updated: 01/06/2020 (DD/MM/YYYY)</Card.Text>
-            
-
+            <Card.Text className="text-white">Last updated: 11/06/2020 (DD/MM/YYYY)</Card.Text>
             
 
             {messageImport.map(message =>
             <Card className="text-white mt-4 p-4" bg="dark">
             
             <Card.Text className="text-white">{message.date}</Card.Text>
-            <Card.Text className="text-white">{message.message}</Card.Text>
+            <Card.Text className="text-white">{message.body}</Card.Text>
             
 
             </Card>
@@ -62,6 +60,18 @@ export const Factory = () => {
                     <Card.Text className="text-center">Shipping to customers</Card.Text>
                     </Col>
 
+                    
+
+                </Row>
+                <Row className="mt-4">
+                <Col/>
+                <Col/>
+                <Col/>
+                <Col/>
+                <Col>
+                    <ProgressBar animated={product.stage===5} now={getStageProgress(product.stage, 5)}/>
+                    <Card.Text className="text-center">Extras</Card.Text>
+                    </Col>
                 </Row>
                 <br/>
                 <Card.Text>Estimated shipping: {product.estShippingDate}</Card.Text>
