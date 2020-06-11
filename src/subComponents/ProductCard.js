@@ -24,7 +24,8 @@ export const ProductCard = ({ product, setComparison, buttonColor, comparable })
                 <Card.Body>
                 
                 <Card.Title>{product.name}</Card.Title>
-                <Card.Text className="text-muted">{product.version}</Card.Text>
+                <Card.Title className="text-muted">{product.version}</Card.Title>
+                
                 </Card.Body>
 
                 <Button variant="secondary" className="rounded-0" onClick={() => history.push(`/keyboard/${product.SKU}`)}>Read more</Button>

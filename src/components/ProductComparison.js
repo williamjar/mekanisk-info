@@ -35,11 +35,11 @@ export const ProductComparison = () => {
         return (
                 <Container fluid>
                        
-                       <Col>
+                       <Card bg="dark" className="p-3 m-3">
                        <Accordion defaultActiveKey="1">
                                 
                                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                <Button>Show all products</Button>
+                                <Button>Toggle product list</Button>
                                 </Accordion.Toggle>
                                 <Accordion.Collapse eventKey="0">
                                 <ListGroup>
@@ -53,12 +53,11 @@ export const ProductComparison = () => {
                                </Accordion.Collapse>
                                
                                </Accordion>
-                        </Col>
+                        </Card>
                         
 
-                        <Row className="justify-content-center  ">
-                                <Image className="m-4" width="500" src="https://cdn.shopify.com/s/files/1/1347/2157/files/websitelogo.png?v=1588832402" alt="Responsive image" />
-                                
+                        <Row className="text-white justify-content-center  ">
+                                Scroll down to view the comparison
                         </Row>
                         
                         <Row className="justify-content-center"> 
