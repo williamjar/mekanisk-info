@@ -133,7 +133,7 @@
     },
     {
         "name":"Tind",
-        "version":"R1",
+        "version":"Series 1",
         "SKU":"tind_r1",
         "price": 400,
         "size":60,
@@ -149,11 +149,13 @@
         "weight":1400,
         "features":
             [
-               "All new Mekanisk isolation mounting",
+               "All new Mekanisk Gasket System",
+               "Copper cornerstone with serial number",
                "USB-C centered daughterboard",
                "Seamless design",
                "All new solder-only Wilba PCB",
-               "New plate design and cutouts"
+               "New plate design and cutouts",
+               "Optional carbon fiber plate"
             ]
     },
     {

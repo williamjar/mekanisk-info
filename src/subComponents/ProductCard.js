@@ -18,7 +18,7 @@ export const ProductCard = ({ product, setComparison, buttonColor, comparable })
     return (
         <animated.div style={jumpIn}>
             
-            <Card className="m-2 text-white border-0 shadow-lg" bg="dark">
+            <Card className="m-2 p-2 border-0 shadow-lg" bg="dark">
                 <Row>
                 <ProductView onClose={handleClose} product={product} show={onOpen} />
                 <Card.Body>
@@ -28,8 +28,8 @@ export const ProductCard = ({ product, setComparison, buttonColor, comparable })
                 
                 </Card.Body>
 
-                <Button variant="secondary" className="rounded-0" onClick={() => history.push(`/keyboard/${product.SKU}`)}>Read more</Button>
-                <Button disabled={buttonColor === "secondary"} hidden={!comparable} variant={buttonColor} className="rounded-0" onClick={setComparison}>Compare</Button>
+                <Button className="m-3" variant="secondary" onClick={() => history.push(`/keyboard/${product.SKU}`)}>Read more</Button>
+                <Button className="m-3" disabled={buttonColor === "secondary"} hidden={!comparable} variant={buttonColor} onClick={setComparison}>Compare</Button>
                 </Row>
             </Card>
         </animated.div>
@@ -48,7 +48,7 @@ export const ProductView = ({ onClose, product, show }) => {
             animation={true}
         >
             <Image fluid="true" src={product.images[0]} />
-            <Modal.Body className="text-white p-4">
+            <Modal.Body className="p-4">
 
                 {product.description}
             </Modal.Body>
@@ -65,7 +65,7 @@ export const BigCard = ({ removeComparison, product }) => {
     })
     return (
         <animated.div style={jumpIn}>
-            <Card className="m-2 text-white border-0 shadow" bg="dark">
+            <Card className="m-2 border-0 shadow-lg" bg="dark" >
                 <Button variant="danger" onClick={removeComparison}>Close</Button>
                 <Card.Img variant="top" fluid="true" src={product.images[0]} />
 
@@ -75,7 +75,7 @@ export const BigCard = ({ removeComparison, product }) => {
                     <Card.Title>{product.version}</Card.Title>
 
 
-                    <ListGroup>
+                    <ListGroup >
                         <ListGroupItem active>Specifications</ListGroupItem>
                         <ListGroupItem variant="dark">Size: {product.size} %</ListGroupItem>
                         <ListGroupItem variant="dark">Mounting style: {product.mountingStyle}</ListGroupItem>
@@ -104,13 +104,11 @@ export const BigCard = ({ removeComparison, product }) => {
     )
 }
 
-
-
 export const BigCardPlaceholder = () => {
 
     return (
 
-        <Card className="m-4 text-white border-0 shadow-lg" bg="superdark">
+        <Card className="text-white m-4 border-0 shadow-lg" bg="superdark">
             <Card.Header><Card.Title>Product comparison</Card.Title></Card.Header>
             <Card.Body>
                 <Card.Text className="text-center">You can click "compare" to place the product you want to compare here.</Card.Text>

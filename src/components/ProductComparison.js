@@ -30,23 +30,23 @@ export const ProductComparison = () => {
                         setComparison([...comparison, product]);
                 }
         }
-
         
         return (
                 <Container fluid>
                        
                        <Card bg="dark" className="p-3 m-3">
-                       <Accordion defaultActiveKey="1">
+                       <Accordion defaultActiveKey="0">
                                 
                                 <Accordion.Toggle as={Button} variant="link" eventKey="0">
                                 <Button>Toggle product list</Button>
                                 </Accordion.Toggle>
+                                Scroll down to view comparison.
                                 <Accordion.Collapse eventKey="0">
                                 <ListGroup>
                                 {productArray.map(product =>
-                                        <animated.div style={jumpIn}>
+                                        
                                         <ProductCard comparable={true} key={product.name} buttonColor={checkColor(product)} setComparison={() => handleAddition(product)} product={product} />
-                                        </animated.div>
+                                        
                                )}
                                </ListGroup>
                                
@@ -56,7 +56,7 @@ export const ProductComparison = () => {
                         </Card>
                         
 
-                        <Row className="text-white justify-content-center  ">
+                        <Row className=" justify-content-center  ">
                                 Scroll down to view the comparison
                         </Row>
                         
@@ -71,9 +71,7 @@ export const ProductComparison = () => {
                        
                                 {comparison.map(cProduct =>
                                         <Col>
-                                        <animated.div style={jumpIn}>
                                         <BigCard key={cProduct.name} product={cProduct} removeComparison={() => handleRemove(cProduct)} />
-                                        </animated.div>
                                         </Col>
                                         
                                 )}

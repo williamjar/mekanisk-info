@@ -16,14 +16,14 @@ export const Factory = () => {
                                 <Image className="m-4" width="500" src="https://cdn.shopify.com/s/files/1/1347/2157/files/websitelogo.png?v=1588832402" alt="Responsive image" />
                                 
                         </Row>
-            <Card.Text className="text-white">Last updated: 11/06/2020 (DD/MM/YYYY)</Card.Text>
+            <Card.Text className="">Last updated: 11/06/2020 (DD/MM/YYYY)</Card.Text>
             
 
             {messageImport.map(message =>
-            <Card className="text-white mt-4 p-4" bg="dark">
+            <Card className=" mt-4 p-4" bg="dark">
             
-            <Card.Text className="text-white">{message.date}</Card.Text>
-            <Card.Text className="text-white">{message.body}</Card.Text>
+            <Card.Text className="">{message.date}</Card.Text>
+            <Card.Text className="">{message.body}</Card.Text>
             
 
             </Card>
@@ -31,7 +31,7 @@ export const Factory = () => {
             )}
             
             {factoryImport.map(product=>
-                <Card className="text-white mt-4 p-4" bg="dark">
+                <Card className=" mt-4 p-4" bg="dark">
                 <Card.Title>{product.name} </Card.Title>
                 <Card.Text className="text-muted">{product.version}</Card.Text>
                 <Row>

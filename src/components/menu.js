@@ -7,10 +7,10 @@ export const Menu = () => {
     const history = useHistory();
     return (
         <div className="mb-4">
-            <Button onClick={() => history.push("/")}>Home</Button>
-            <Button onClick={() => history.push("/productcomparison")}>Products</Button>
-            <Button onClick={() => history.push("/downloads")}>Downloads</Button>
-            <Button onClick={() => window.open("https://mekanisk.com/")}>Go to store</Button>
+            <Button className="ml-2" onClick={() => history.push("/")}>Home</Button>
+            <Button className="ml-2" onClick={() => history.push("/productcomparison")}>Products</Button>
+            <Button className="ml-2" onClick={() => history.push("/downloads")}>Downloads</Button>
+            <Button className="ml-2" onClick={() => window.open("https://mekanisk.com/")}>Go to store</Button>
         </div>
     )
 }

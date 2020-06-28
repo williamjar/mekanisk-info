@@ -7,12 +7,13 @@ $font-stack:    Helvetica, sans-serif;
 
 
 $theme-colors: (
-    "primary":  #15576b,
-    "danger": #7c260c,
+    "primary":  #003E51,
+    "danger": #950000,
     "secondary": #474e52,
     "superdark": #353535,
     "info": #007065,
-    "liveGreen": #009e42
+    "liveGreen": #009e42,
+    "dark":#c8c8c8
 
 );
 
@@ -23,7 +24,7 @@ $modal-content-border-color: #474e52;
 $modal-backdrop-bg:           #242424;
 
 * {
-    border-radius: 0 !important;
+    border-radius: 2 !important;
     font-family: 'Roboto', sans-serif;
   }
   

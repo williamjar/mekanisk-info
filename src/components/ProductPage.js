@@ -15,9 +15,9 @@ export const ProductPage = () => {
 
     return (
         <Container >
-            <Card className="text-white p-4" bg="dark">
+            <Card className="p-4" bg="dark">
                 <Card.Body>
-                    <Card.Title className="text-white text-center">{product.name} {product.version}</Card.Title>
+                    <Card.Title className="text-center">{product.name} {product.version}</Card.Title>
                     <Card.Text>{product.description}</Card.Text>
 
                     <Row>
@@ -51,7 +51,7 @@ export const ProductPage = () => {
 
                     </Row>
 
-                    <Card.Title className="text-white mt-4 text-center">More pictures</Card.Title>
+                    <Card.Title className="mt-4 text-center">More pictures</Card.Title>
                     <Row>
 
                         {product.images.map(image =>
