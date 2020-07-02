@@ -24,7 +24,6 @@ export const ProductCard = ({ product, setComparison, buttonColor, comparable })
                 <Card.Body>
                 
                 <Card.Title>{product.name}</Card.Title>
-                <Card.Title className="text-muted">{product.version}</Card.Title>
                 
                 </Card.Body>
 

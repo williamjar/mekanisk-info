@@ -21,62 +21,8 @@
                "Sharp, distinct design lines",
                "Uniquely machined and serial numbered brass weight",
                "Sturdy tray mounting",
-               "Removeable brass mounting points"
-            ]
-    },
-    {
-        "name":"Fjell",
-        "version":"R4",
-        "SKU":"fjell_r4",
-        "price": 290,
-        "size":60,
-        "releaseProgress":100,
-        "images": [
-            "https://cdn.shopify.com/s/files/1/1347/2157/files/u5t2ty5srgw31.png?v=1581680958",
-            "https://i.ytimg.com/vi/SAv7zlVqjXA/maxresdefault.jpg",
-            "https://external-preview.redd.it/QFo46F5GtWftZ38WuotF0CMZknCRZJN73F7MlT4Si4Y.jpg?auto=webp&s=5c07e023b60557fef4a533cee25c5ed15645ba85",
-            "https://i.ytimg.com/vi/aeqnEJpPZVY/maxresdefault.jpg"
-            ],
-        "description":"The famous Fjell mechanical keyboard.",
-        "releaseDate":2019,
-        "nextReleasedate":null, 
-        "mountingStyle":"Tray mount",
-        "weight":2000,
-        "features":
-            [   
-               "Great sound profile",
-               "Sharp, distinct design lines",
-               "Uniquely machined and serial numbered brass weight",
-               "Sturdy tray mounting",
-               "Removeable brass mounting points"
-            ]
-    },
-
-    {
-        "name":"Klippe T",
-        "version":"R3",
-        "SKU":"klippe_t_r3",
-        "price": 120,
-        "size":60,
-        "releaseProgress":100,
-        "images": [
-            "https://cdn.shopify.com/s/files/1/1347/2157/files/gU0hDndTJP2IPTCCK6de9LKBk7Cr49fqaTrVBCGuPD8.jpg?v=1581680868",
-            "https://cdn.shopify.com/s/files/1/1347/2157/products/Case-Mekanisk-Klippe-R3-Silver-Logo_1800x1800.jpg?v=1574692485",
-            "https://cdn.shopify.com/s/files/1/1347/2157/products/Case-Mekanisk-Klippe-R3-Aqua-Logo_1800x1800.jpg?v=1574692485"
-        
-        ],
-        "description":"The simplistic elegant tray mount case with premium features.",
-        "releaseDate":2019,
-        "nextReleasedate":null,
-        "mountingStyle":"Tray mount",
-        "weight":1000,
-        
-        "features":
-            [
-               "Affordable",
                "Removeable brass mounting points",
-               "Mekanisk mountain detailing",
-               "Sturdy tray mounting, based on the Fjell"
+               "Limited Rose edition available"
             ]
     },
     {
@@ -140,12 +86,12 @@
         "releaseProgress":90,
         "images":[
         
-            "https://cdn.shopify.com/s/files/1/1347/2157/files/TIND_2020-May-10_02-34-36PM-000_CustomizedView41609815214.png?v=1589125986"
+            "https://i.imgur.com/ThlDcXF.jpg"
         ],
         "description":"Top of the line, exclusive 60%-sized mechanical keyboard. Designed from years of experience, from the ground up.",
         "releaseDate":2020,
         "nextReleasedate":2020,
-        "mountingStyle":"Mekanisk isolation mounting",
+        "mountingStyle":"Mekanisk Gasket System",
         "weight":1400,
         "features":
             [
