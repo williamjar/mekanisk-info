@@ -48,7 +48,7 @@ export const Factory = () => {
                   
 
                     
-                    <ProgressBar animated={product.stage===3} now={getStageProgress(product.stage, 3)}/>
+                    <ProgressBar animated={product.stage===3 || product.stage===4} now={getStageProgress(product.stage, 3)}/>
                     <Card.Text className="text-center">Quality control</Card.Text>
                     
 
