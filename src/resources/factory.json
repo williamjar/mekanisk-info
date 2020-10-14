@@ -21,15 +21,8 @@
         "name":"Tind",
         "version":"Series 1",
         "SKU":"tind_r1",
-        "estShippingDate":"November 2020",
-        "stage": 1
-    },
-    {
-        "name":"Tind",
-        "version":"Series 2",
-        "SKU":"tind_r2",
-        "estShippingDate":"-",
-        "stage": -1
+        "estShippingDate":"January 2021",
+        "stage": 2
     }
 
 ]
