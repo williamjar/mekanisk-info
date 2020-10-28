@@ -18,7 +18,7 @@ export const ProductCard = ({ product, setComparison, buttonColor, comparable })
     return (
         <animated.div style={jumpIn}>
             
-            <Card className="m-2 p-2 border-0 shadow-lg" bg="dark">
+            <Card className="m-2 p-2 border-0 shadow-lg text-white" bg="dark">
                 <Row>
                 <ProductView onClose={handleClose} product={product} show={onOpen} />
                 <Card.Body>
@@ -41,7 +41,7 @@ export const ProductView = ({ onClose, product, show }) => {
 
     return (
         <Modal
-            className="border-0 shadow"
+            className="border-0 shadow text-white"
             show={show}
             onHide={onClose}
             animation={true}
@@ -64,7 +64,7 @@ export const BigCard = ({ removeComparison, product }) => {
     })
     return (
         <animated.div style={jumpIn}>
-            <Card className="m-2 border-0 shadow-lg" bg="dark" >
+            <Card className="m-2 border-0 shadow-lg text-white" bg="dark" >
                 <Button variant="danger" onClick={removeComparison}>Close</Button>
                 <Card.Img variant="top" fluid="true" src={product.images[0]} />
 

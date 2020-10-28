@@ -8,10 +8,10 @@ export class Footer extends React.Component {
 
     render(){
         return(
-            <div className="text-muted text-center">                
+            <div className="text-muted text-center mt-4">                
                 Thank you for using Mekanisk.xyz.
 
-                This web app is in early stages of production.
+                We are working on making a support-system for Mekanisk which will include a redesign of this page. Estimated December 2020. 
 
                 <Nav className="justify-content-center" >
                     <Nav.Item>

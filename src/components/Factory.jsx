@@ -15,23 +15,13 @@ export const Factory = () => {
 
             <p className="text-white">Mekanisk Information and Status Page</p>
 
-
-            {messageImport.map(message =>
-            <Card className="p-4" bg="dark">
-            
-            <Card.Text className="">{message.date}</Card.Text>
-            <Card.Text className="">{message.body}</Card.Text>
-            
-
-            </Card>
-
-            )}
+    
             <Row>
             {factoryImport.map(product=>
 
             
                 <Col>
-                <Card className="mt-4 p-4" bg="dark">
+                <Card className="mt-4 p-4 text-white" bg="dark">
                 <Card.Title>{product.name} </Card.Title>
                 <Card.Text className="text-muted">{product.version}</Card.Text>
                 

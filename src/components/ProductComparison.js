@@ -34,7 +34,7 @@ export const ProductComparison = () => {
         return (
                 <Container fluid>
                        
-                       <Card bg="dark" className="p-3 m-3">
+                       <Card bg="dark" className="p-3 m-3 text-white">
                        <Accordion defaultActiveKey="0">
                                 
                                 <Accordion.Toggle as={Button} variant="link" eventKey="0">

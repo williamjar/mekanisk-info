@@ -15,7 +15,7 @@ export const ProductPage = () => {
 
     return (
         <Container >
-            <Card className="p-4" bg="dark">
+            <Card className="p-4 text-white" bg="dark">
                 <Card.Body>
                     <Card.Title className="text-center">{product.name} {product.version}</Card.Title>
                     <Card.Text>{product.description}</Card.Text>
