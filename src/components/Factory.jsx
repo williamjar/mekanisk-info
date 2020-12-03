@@ -21,37 +21,34 @@ export const Factory = () => {
 
             
                 <Col>
-                <Card className="mt-4 p-4 text-white" bg="dark">
+                <Card bg="dark" className="shadow-lg mt-4 p-4 text-white">
                 <Card.Title>{product.name} </Card.Title>
                 <Card.Text className="text-muted">{product.version}</Card.Text>
                 
                   
-                    <ProgressBar animated={product.stage===0} now={getStageProgress(product.stage, 0)}/> 
+                    <ProgressBar variant={getColor(product.stage)} animated={product.stage===0} now={getStageProgress(product.stage, 0)}/> 
                     <Card.Text className="text-center">Pre order</Card.Text>
                    
                     
                    
-                    <ProgressBar animated={product.stage===1} now={getStageProgress(product.stage, 1)}/>
+                    <ProgressBar variant={getColor(product.stage)} animated={product.stage===1} now={getStageProgress(product.stage, 1)}/>
                     <Card.Text className="text-center">Arranging manufacturing</Card.Text>
            
 
                 
-                    <ProgressBar animated={product.stage===2} now={getStageProgress(product.stage, 2)}/>
+                    <ProgressBar variant={getColor(product.stage)}  animated={product.stage===2} now={getStageProgress(product.stage, 2)}/>
                     <Card.Text className="text-center">In production</Card.Text>
                   
 
                     
-                    <ProgressBar animated={product.stage===3 || product.stage===4} now={getStageProgress(product.stage, 3)}/>
+                    <ProgressBar variant={getColor(product.stage)}  animated={product.stage===3} now={getStageProgress(product.stage, 3)}/>
                     <Card.Text className="text-center">Quality control</Card.Text>
                     
 
                     
-                    <ProgressBar animated={product.stage===4} now={getStageProgress(product.stage, 4)}/>
+                    <ProgressBar variant={getColor(product.stage)} animated={product.stage===4} now={getStageProgress(product.stage, 4)}/>
                     <Card.Text className="text-center">Shipping to customers</Card.Text>
                     
-                    
-                    <ProgressBar animated={product.stage===5} now={getStageProgress(product.stage, 5)}/>
-                    <Card.Text className="text-center text-muted">Extras</Card.Text>
                     
                 
 
@@ -60,6 +57,7 @@ export const Factory = () => {
                 </Row>
                 <br/>
                 <Card.Text>Estimated shipping: {product.estShippingDate}</Card.Text>
+                <Card.Text className="text-muted">Extras and future sales will be announced in our Discord.</Card.Text>
                 </Card>
                 </Col>
                 
@@ -75,6 +73,13 @@ export const Factory = () => {
             return 100
         }
     }
+
+    function getColor(stage){
+        if(stage===5) return"success"
+        return "primary"
+    }
+
+    
     
 
 }
