@@ -1,28 +1,11 @@
-[
-    
-    {
-        "name":"Klippe T",
-        "version":"R4",
-        "SKU":"klippet_r4",
-        "estShippingDate":"November 2020 (100% shipped now)",
-        "stage": 5
-    },
-    {
-        "name":"Fjell",
-        "version":"R5",
-        "SKU":"fjell_r5",
-        "estShippingDate":"November 2020 (100% shipped now)",
-        "stage": 5
-    },
-
-   
+[  
 
     {
         "name":"Tind",
         "version":"Series 1",
         "SKU":"tind_r1",
         "estShippingDate":"January 2021",
-        "stage": 2
+        "stage": 3
     }
 
 ]
