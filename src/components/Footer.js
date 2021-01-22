@@ -11,7 +11,7 @@ export class Footer extends React.Component {
             <div className="text-muted text-center mt-4">                
                 Thank you for using Mekanisk.xyz.
 
-                We are working on making a support-system for Mekanisk which will include a redesign of this page. Estimated December 2020. 
+                We are working on making a support-system for Mekanisk which will include a redesign of this page. Estimated January 2021. 
 
                 <Nav className="justify-content-center" >
                     <Nav.Item>

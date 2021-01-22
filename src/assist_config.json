@@ -1,0 +1,16 @@
+
+
+{
+    "company": "kebab",
+    "StatusTerms":[
+        "No details", 
+        "Unveiled", 
+        "Pre order open", 
+        "Pre order closed", 
+        "Preparing for manufacturing", 
+        "Manufacturing", 
+        "Anodizing and finishing", 
+        "Quality control and packaging",
+        "Shipping started", 
+        "Shipping finished"]
+}
